@@ -1,0 +1,45 @@
+.header {
+	align-items: center;
+	justify-content: space-between;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 9rem;
+	border-radius: 0 0 40px 40px;
+	background-color: $color-primary;
+	padding: 0 4rem;
+	@media only screen and(max-width: 800px) {
+		display: flex;
+	}
+
+	&__user {
+		background-color: $color-danger;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 6rem;
+		height: 6rem;
+		padding: 1rem;
+		border-radius: 50%;
+
+		&-name {
+			font-family: $font-source-sans;
+			font-weight: $light;
+			color: $font-secondary;
+			font-size: 3rem;
+		}
+	}
+
+	&__btn {
+		span {
+			display: block;
+			width: 4rem;
+			height: 3px;
+			margin-bottom: 5px;
+			border-radius: 2px;
+			background-color: $color-neutral;
+		}
+	}
+}

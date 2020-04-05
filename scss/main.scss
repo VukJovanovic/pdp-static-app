@@ -1,0 +1,17 @@
+// Base files
+@import './base/reset';
+@import './base/variables';
+@import './base/typography';
+
+// Utils
+@import './utils/animations';
+
+// Layout files
+@import './layout/containerGrid';
+
+// Components files
+@import './components/sidebar';
+@import './components/header';
+
+// Page files
+@import './pages/welcome';

@@ -1,0 +1,21 @@
+@keyframes weekDaysShow {
+	from {
+		opacity: 0;
+		height: 0;
+	}
+	to {
+		height: 20rem;
+		opacity: 1;
+	}
+}
+
+@keyframes weekDaysHide {
+	from {
+		opacity: 1;
+		height: 20rem;
+	}
+	to {
+		opacity: 0;
+		height: 0;
+	}
+}

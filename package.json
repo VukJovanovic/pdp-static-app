@@ -1,0 +1,22 @@
+{
+	"name": "pdp-app-static",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"watch:js": "parcel watch ./js/index.js --out-dir ./js --out-file bundle.js",
+		"build:js": "parcel build ./js/index.js --out-dir ./js --out-file bundle.js",
+		"watch:sass": "parcel watch ./scss/main.scss --out-dir ./css --out-file main.css",
+		"build:sass": "parcel build ./scss/main.scss --out-dir ./css --out-file main.css"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"parcel-bundler": "^1.12.4",
+		"sass": "^1.26.3"
+	},
+	"dependencies": {
+		"autoprefixer": "^9.7.5",
+		"postcss-modules": "^1.5.0"
+	}
+}
