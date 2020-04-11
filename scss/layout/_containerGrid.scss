@@ -1,4 +1,18 @@
 .container {
 	display: grid;
 	grid-template-columns: 1fr;
+
+	.content {
+		background-color: $color-secondary;
+		min-height: 100vh;
+		grid-column: 1 / -1;
+		display: grid;
+		grid-template-columns: minmax(30px, 1fr) minmax(min-content, 1000px) minmax(
+				30px,
+				1fr
+			);
+	}
+	.day__container {
+		grid-column: 2 / -3;
+	}
 }

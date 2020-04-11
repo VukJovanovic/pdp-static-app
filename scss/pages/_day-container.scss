@@ -1,0 +1,45 @@
+.day__container {
+	padding: 12rem 0;
+}
+
+.day__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&-description {
+		display: flex;
+		color: $font-secondary;
+		font-family: $font-open-sans;
+		font-size: 1.6rem;
+		font-weight: $light;
+		position: relative;
+		padding-bottom: 0.5rem;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 4rem;
+			height: 1px;
+			background-color: $color-danger;
+		}
+	}
+	&-separator {
+		font-size: 1.6rem;
+		margin: 0 1rem;
+	}
+
+	&-btn {
+		display: flex;
+		align-items: center;
+		font-family: $font-open-sans;
+		font-size: 1.4rem;
+		font-weight: $light;
+		color: $font-secondary;
+	}
+	&-icon {
+		width: 2rem;
+		margin-right: 1rem;
+	}
+}

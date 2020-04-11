@@ -56,6 +56,16 @@ ul {
   display: grid;
   grid-template-columns: 1fr;
 }
+.container .content {
+  background-color: #022e43;
+  min-height: 100vh;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: minmax(30px, 1fr) minmax(min-content, 1000px) minmax(30px, 1fr);
+}
+.container .day__container {
+  grid-column: 2/-3;
+}
 
 .sidebar {
   position: fixed;
@@ -211,6 +221,50 @@ ul {
 }
 .header__burger span:last-child {
   margin-bottom: 0;
+}
+
+.day__container {
+  padding: 12rem 0;
+}
+
+.day__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.day__header-description {
+  display: flex;
+  color: #f7ebec;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.day__header-description::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4rem;
+  height: 1px;
+  background-color: #de3c4b;
+}
+.day__header-separator {
+  font-size: 1.6rem;
+  margin: 0 1rem;
+}
+.day__header-btn {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #f7ebec;
+}
+.day__header-icon {
+  width: 2rem;
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=/main.css.map */
