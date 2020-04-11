@@ -1,2 +1,216 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Sans+Pro:300,400&display=swap");html{font-size:62.5%}body,html{width:100%;height:100%}body{-webkit-box-sizing:border-box;box-sizing:border-box;overflow-x:hidden;position:relative}*,:after,:before{margin:0;padding:0;-webkit-box-sizing:inherit;box-sizing:inherit}a{text-decoration:none}ul{list-style:none}@keyframes weekDaysShow{0%{opacity:0;height:0}to{height:20rem;opacity:1}}@keyframes weekDaysHide{0%{opacity:1;height:20rem}to{opacity:0;height:0}}.container{background-color:#022e43;display:grid;grid-template-columns:30rem 1fr;min-height:100vh}@media only screen and (max-width:1024px){.container{grid-template-columns:25rem 1fr}}@media only screen and (max-width:800px){.container{grid-template-columns:1fr;align-items:center}}.container .content__container{grid-column:2/3;max-width:100rem;padding:4rem;justify-self:center;overflow-x:hidden}@media only screen and (max-width:800px){.container .content__container{grid-column:1/-1;width:100%}}@media only screen and (max-width:500px){.container .content__container{padding:3rem}}.sidebar{position:fixed;top:0;left:0;height:100vh;width:30rem;background-color:#0a202e;display:flex;flex-direction:column}@media only screen and (max-width:1024px){.sidebar{width:25rem}}@media only screen and (max-width:800px){.sidebar{display:none}}.sidebar__welcome{background-color:#de3c4b;padding:4rem 0;text-align:center;border-radius:0 0 40px 40px}.sidebar__welcome-text{font-family:Open Sans,sans-serif;font-weight:300;font-size:2rem;color:#f7ebec;margin-bottom:1rem}.sidebar__welcome-name{font-family:Source Sans Pro,sans-serif;font-weight:400;font-size:4rem;color:#f7ebec}.sidebar__navigation{padding:8rem 0 3rem;display:flex;flex-direction:column;justify-content:space-between;flex:1}.sidebar__navigation-item{padding:1.5rem 3rem;margin-bottom:1rem;display:flex;align-items:center;font-family:Open Sans,sans-serif;font-weight:300;font-size:1.8rem;color:#f7ebec;border-radius:40px 0 0 40px;transition:background-color .4s}.sidebar__navigation-item--active,.sidebar__navigation-item:hover{background-color:#022e43}.sidebar__navigation-icon{margin-right:3rem;width:2.5rem}.sidebar__navigation .notification{margin-left:3rem;background-color:#de3c4b;border-radius:10px;width:3rem;padding:.5rem 0;text-align:center;font-size:1.5rem}@media only screen and (max-width:1024px){.sidebar__navigation .notification{margin-left:1.5rem}}.sidebar__navigation-bottom{position:relative;padding-top:2rem}.sidebar__navigation-bottom:before{content:"";position:absolute;top:0;left:3rem;width:20%;height:1px;background-color:#de3c4b}.header{align-items:center;justify-content:space-between;display:none;position:fixed;top:0;left:0;width:100vw;height:9rem;border-radius:0 0 40px 40px;background-color:#0a202e;padding:0 4rem}@media only screen and (max-width:800px){.header{display:flex}}.header__user{background-color:#de3c4b;display:flex;justify-content:center;align-items:center;width:6rem;height:6rem;padding:1rem;border-radius:50%}.header__user-name{font-family:Source Sans Pro,sans-serif;font-weight:300;color:#f7ebec;font-size:3rem}.header__btn span{display:block;width:4rem;height:3px;margin-bottom:7px;border-radius:2px;background-color:#f7ebec}.welcome__content{display:flex;flex-direction:column;align-items:center}.welcome__content .welcome__text{text-align:center;margin-bottom:8rem}.welcome__content .welcome__text-quote{font-family:Source Sans Pro,sans-serif;font-size:2.5rem;font-weight:300;color:#f7ebec;margin-bottom:1rem}.welcome__content .welcome__text-author{font-family:Open Sans,sans-serif;font-size:1.8rem;font-weight:400;color:#f7ebec;padding-top:1rem;position:relative}.welcome__content .welcome__text-author:before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:3rem;height:1px;background-color:#de3c4b}.welcome__content .week__container{width:90rem;margin-bottom:2rem}.welcome__content .week__container:last-child{margin-bottom:0}@media only screen and (max-width:1400px){.welcome__content .week__container{width:80rem}}@media only screen and (max-width:1260px){.welcome__content .week__container{width:70rem}}@media only screen and (max-width:1100px){.welcome__content .week__container{width:60rem}}@media only screen and (max-width:950px){.welcome__content .week__container{width:55rem}}@media only screen and (max-width:860px){.welcome__content .week__container{width:47rem}}@media only screen and (max-width:800px){.welcome__content .week__container{width:100%}}.welcome__content .week{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 1.5rem 1.5rem 3rem;border-radius:10px;background-color:#0a202e;transition:transform .4s}.welcome__content .week:hover{transform:translateY(-5px)}.welcome__content .week span{font-family:Open Sans,sans-serif;font-size:2rem;color:#f7ebec;font-weight:300}.welcome__content .week__icon{background-color:#de3c4b;display:flex;justify-content:center;align-content:center;padding:.5rem;border-radius:10px}.welcome__content .week__icon-img{width:2.5rem}.welcome__content .week__days{display:flex;align-items:center;justify-content:center;overflow:hidden;padding:0 2rem;height:0;opacity:0}.welcome__content .week__day{width:15rem;height:15rem;background-color:#0a202e;border-radius:10px;margin-right:2.5rem;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative}.welcome__content .week__day:last-child{margin-right:0}.welcome__content .week__day-text{font-family:Source Sans Pro,sans-serif;font-weight:300;font-size:2.5rem;color:#f7ebec;margin-bottom:1rem}.welcome__content .week__day-number{font-family:Source Sans Pro,sans-serif;font-weight:300;font-size:6rem;color:#f7ebec}.welcome__content .week__day-show{animation-duration:.4s;animation-name:weekDaysShow;animation-fill-mode:forwards}.welcome__content .week__day-hide{animation-duration:.4s;animation-name:weekDaysHide;animation-fill-mode:forwards}.welcome__content .locked__day-overlay{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;justify-content:center;align-items:center;background-color:#0a202e;border-radius:10px;opacity:0;display:none;transition:overlay .5}.welcome__content .locked__day-overlay img{width:5rem}.welcome__content .week__day-locked .locked__day-overlay{display:flex;opacity:1}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Sans+Pro:300,400&display=swap");
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@keyframes weekDaysShow {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    height: 20rem;
+    opacity: 1;
+  }
+}
+@keyframes weekDaysHide {
+  from {
+    opacity: 1;
+    height: 20rem;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30rem;
+  height: 100vh;
+  background-color: #0a202e;
+}
+@media only screen and (max-width: 1024) {
+  .sidebar {
+    width: 25rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+}
+.sidebar__welcome {
+  background-color: #de3c4b;
+  padding: 4rem 0;
+  text-align: center;
+  border-radius: 0 0 40px 40px;
+}
+.sidebar__welcome-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #f7ebec;
+  margin-bottom: 1.5rem;
+}
+.sidebar__welcome-name {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #f7ebec;
+}
+.sidebar__navigation {
+  padding: 10rem 0rem 5rem 0rem;
+}
+.sidebar__navigation-link {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #f7ebec;
+  border-radius: 40px 0 0 40px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.sidebar__navigation-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 40px 0 0 40px;
+  height: 100%;
+  width: 0;
+  transition: 0.4s;
+  background-color: #022e43;
+  z-index: 1;
+}
+.sidebar__navigation-link span {
+  z-index: 2;
+}
+.sidebar__navigation .sidebar__navigation-link:hover.sidebar__navigation-link:before {
+  width: 100%;
+}
+.sidebar__navigation-link--active {
+  background-color: #022e43;
+}
+.sidebar__navigation .sidebar__icon {
+  width: 2rem;
+  margin-right: 2rem;
+  z-index: 2;
+  transition: 0.4s;
+}
+.sidebar__navigation-account {
+  margin-top: 10rem;
+  padding-top: 1rem;
+  position: relative;
+}
+.sidebar__navigation-account::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 4rem;
+  width: 4rem;
+  height: 1px;
+  background-color: #de3c4b;
+}
+.sidebar__navigation-logout {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #f7ebec;
+  border-radius: 40px 0 0 40px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.sidebar .sidebar__navigation-logout:hover.sidebar__navigation-logout img {
+  margin-right: 1.5rem;
+}
+
+.header {
+  width: 100vw;
+  height: 9rem;
+  background-color: #0a202e;
+  border-radius: 0 0 40px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 3rem;
+}
+@media only screen and (max-width: 800px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header__user {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #de3c4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__user-name {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #f7ebec;
+}
+.header__burger {
+  width: 4rem;
+}
+.header__burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-bottom: 6px;
+  background-color: #f7ebec;
+  border-radius: 10px;
+}
+.header__burger span:last-child {
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=/main.css.map */

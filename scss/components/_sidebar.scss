@@ -2,96 +2,118 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100vh;
 	width: 30rem;
+	height: 100vh;
 	background-color: $color-primary;
-	display: flex;
-	flex-direction: column;
 
-	@media only screen and(max-width: 1024px) {
+	@media only screen and(max-width: 1024) {
 		width: 25rem;
 	}
-
 	@media only screen and(max-width: 800px) {
 		display: none;
 	}
 
-	// Sidebar welcome
+	// ********* Sidebar welcome styles
+
 	&__welcome {
 		background-color: $color-danger;
 		padding: 4rem 0;
 		text-align: center;
 		border-radius: 0 0 40px 40px;
+
 		&-text {
 			font-family: $font-open-sans;
-			font-weight: $light;
 			font-size: 2rem;
+			font-weight: $light;
 			color: $font-secondary;
-			margin-bottom: 1rem;
+			margin-bottom: 1.5rem;
 		}
+
 		&-name {
 			font-family: $font-source-sans;
+			font-size: 3rem;
 			font-weight: $bold;
-			font-size: 4rem;
 			color: $font-secondary;
 		}
 	}
 
-	// Sidebar navigation styles
+	// ******** Sidebar navigation styles
+
 	&__navigation {
-		padding: 8rem 0rem 3rem 0rem;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		flex: 1;
-		&-item {
-			padding: 1.5rem 3rem;
-			margin-bottom: 1rem;
+		padding: 10rem 0rem 5rem 0rem;
+
+		// Navigation link styles
+		&-link {
 			display: flex;
 			align-items: center;
+			padding: 1.5rem 4rem;
 			font-family: $font-open-sans;
+			font-size: 1.6rem;
 			font-weight: $light;
-			font-size: 1.8rem;
 			color: $font-secondary;
 			border-radius: 40px 0 0 40px;
-			transition: background-color 0.4s;
-			&:hover {
+			margin-bottom: 1rem;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				border-radius: 40px 0 0 40px;
+				height: 100%;
+				width: 0;
+				transition: 0.4s;
 				background-color: $color-secondary;
+				z-index: 1;
+			}
+			span {
+				z-index: 2;
 			}
 		}
-		&-item--active {
+		.sidebar__navigation-link:hover.sidebar__navigation-link:before {
+			width: 100%;
+		}
+		&-link--active {
 			background-color: $color-secondary;
 		}
-		&-icon {
-			margin-right: 3rem;
-			width: 2.5rem;
-		}
-		// Notification number
-		.notification {
-			margin-left: 3rem;
-			background-color: $color-danger;
-			border-radius: 10px;
-			width: 3rem;
-			padding: 0.5rem 0;
-			text-align: center;
-			font-size: 1.5rem;
 
-			@media only screen and(max-width: 1024px) {
-				margin-left: 1.5rem;
-			}
+		// navigation icon styles
+		.sidebar__icon {
+			width: 2rem;
+			margin-right: 2rem;
+			z-index: 2;
+			transition: 0.4s;
 		}
 	}
-	&__navigation-bottom {
+
+	// Account navigation part
+	&__navigation-account {
+		margin-top: 10rem;
+		padding-top: 1rem;
 		position: relative;
-		padding-top: 2rem;
 		&::before {
 			content: '';
 			position: absolute;
 			top: 0;
-			left: 3rem;
-			width: 20%;
+			left: 4rem;
+			width: 4rem;
 			height: 1px;
 			background-color: $color-danger;
 		}
+	}
+	&__navigation-logout {
+		display: flex;
+		align-items: center;
+		padding: 1.5rem 4rem;
+		font-family: $font-open-sans;
+		font-size: 1.5rem;
+		font-weight: $light;
+		color: $font-secondary;
+		border-radius: 40px 0 0 40px;
+		margin-bottom: 1rem;
+		position: relative;
+	}
+	.sidebar__navigation-logout:hover.sidebar__navigation-logout img {
+		margin-right: 1.5rem;
 	}
 }

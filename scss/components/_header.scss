@@ -1,45 +1,48 @@
 .header {
-	align-items: center;
-	justify-content: space-between;
-	display: none;
+	width: 100vw;
+	height: 9rem;
+	background-color: $color-primary;
+	border-radius: 0 0 40px 40px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100vw;
-	height: 9rem;
-	border-radius: 0 0 40px 40px;
-	background-color: $color-primary;
-	padding: 0 4rem;
+	padding: 0 3rem;
 	@media only screen and(max-width: 800px) {
 		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	&__user {
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;
 		background-color: $color-danger;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 6rem;
-		height: 6rem;
-		padding: 1rem;
-		border-radius: 50%;
 
 		&-name {
 			font-family: $font-source-sans;
 			font-weight: $light;
+			font-size: 2.5rem;
 			color: $font-secondary;
-			font-size: 3rem;
 		}
 	}
 
-	&__btn {
+	&__burger {
+		width: 4rem;
+
 		span {
 			display: block;
-			width: 4rem;
+			width: 100%;
 			height: 3px;
-			margin-bottom: 7px;
-			border-radius: 2px;
+			margin-bottom: 6px;
 			background-color: $color-neutral;
+			border-radius: 10px;
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 }
