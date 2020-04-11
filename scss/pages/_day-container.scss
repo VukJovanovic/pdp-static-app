@@ -11,7 +11,7 @@
 		display: flex;
 		color: $font-secondary;
 		font-family: $font-open-sans;
-		font-size: 1.6rem;
+		font-size: $font-size-1;
 		font-weight: $light;
 		position: relative;
 		padding-bottom: 0.5rem;
@@ -34,12 +34,47 @@
 		display: flex;
 		align-items: center;
 		font-family: $font-open-sans;
-		font-size: 1.4rem;
+		font-size: $font-size-3;
 		font-weight: $light;
 		color: $font-secondary;
 	}
 	&-icon {
 		width: 2rem;
 		margin-right: 1rem;
+	}
+}
+
+// ************* Day Video styles
+.day__video {
+	margin: 5rem 0;
+	height: 30rem;
+	background-color: $color-primary;
+}
+
+// ************* Day Tool styles
+.day__tool {
+	text-align: center;
+	font-family: $font-source-sans;
+	font-size: $font-size-1;
+	font-weight: $light;
+	color: $font-secondary;
+
+	&-quote {
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 1px;
+			width: 4rem;
+			background-color: $color-danger;
+		}
+	}
+	&-author {
+		font-weight: $bold;
 	}
 }
