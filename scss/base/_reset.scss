@@ -27,6 +27,9 @@ body {
 
 a {
 	text-decoration: none;
+	&:focus {
+		outline: none;
+	}
 }
 
 ul {

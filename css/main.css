@@ -26,6 +26,9 @@ body {
 a {
   text-decoration: none;
 }
+a:focus {
+  outline: none;
+}
 
 ul {
   list-style: none;
@@ -185,7 +188,7 @@ ul {
   left: 0;
   padding: 0 3rem;
   z-index: 20;
-  box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 800px) {
   .header {
@@ -287,15 +290,19 @@ ul {
 }
 .day__form .form__label-content {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 1rem;
   transition: all 0.3s ease;
 }
 .day__form .form__input:focus + .form__label .form__label-content,
-.day__form .form__input:not(:placeholder-shown) + .form__label .form__label-content,
+.day__form .form__input:not(:placeholder-shown) + .form__label .form__label-content {
+  transform: translateY(-2rem);
+  font-size: 1.4rem;
+  color: rgba(247, 235, 236, 0.6);
+}
 .day__form .form__textarea:focus + .form__label .form__label-content,
 .day__form .form__textarea:not(:placeholder-shown) + .form__label .form__label-content {
-  transform: translateY(-150%);
+  transform: translateY(-2rem);
   font-size: 1.4rem;
   color: rgba(247, 235, 236, 0.6);
 }
@@ -315,6 +322,10 @@ ul {
   width: max-content;
   margin: 0 auto;
   border-bottom: 1px solid #de3c4b;
+  transition: all 0.3s ease;
+}
+.form__addTextarea:focus {
+  padding: 0 3rem 1rem 3rem;
 }
 
 .form__button {
@@ -325,11 +336,17 @@ ul {
   border-radius: 10px;
   display: block;
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 4rem;
   font-size: 1.8rem;
   font-weight: 300;
   font-family: "Source Sans Pro", sans-serif;
   color: #f7ebec;
+  -webkit-appearance: none;
+  transition: all 0.3s ease;
+}
+.form__button:focus {
+  outline: none;
+  transform: translateY(-5px);
 }
 
 .day__container {
