@@ -224,6 +224,86 @@ ul {
   margin-bottom: 0;
 }
 
+.day__form {
+  margin-top: 5rem;
+  background-color: #0a202e;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+}
+.day__form .form__heading {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.8rem;
+  color: #f7ebec;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+.day__form .form__group {
+  position: relative;
+  margin-bottom: 4rem;
+}
+.day__form .form__input,
+.day__form .form__textarea {
+  width: 100%;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #f7ebec;
+}
+.day__form .form__input:focus,
+.day__form .form__textarea:focus {
+  outline: none;
+}
+.day__form .form__textarea {
+  resize: vertical;
+  background-color: #0a202e;
+  width: 100%;
+  height: 5rem;
+}
+.day__form .form__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: rgba(247, 235, 236, 0.8);
+  border-bottom: 1px solid #022e43;
+}
+.day__form .form__label::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgba(247, 235, 236, 0.7);
+  transition: all 0.3s ease;
+}
+.day__form .form__label-content {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  transition: all 0.3s ease;
+}
+.day__form .form__input:focus + .form__label .form__label-content,
+.day__form .form__input:not(:placeholder-shown) + .form__label .form__label-content,
+.day__form .form__textarea:focus + .form__label .form__label-content,
+.day__form .form__textarea:not(:placeholder-shown) + .form__label .form__label-content {
+  transform: translateY(-150%);
+  font-size: 1.4rem;
+  color: rgba(247, 235, 236, 0.6);
+}
+.day__form .form__input:focus + .form__label::after,
+.day__form .form__textarea:focus + .form__label::after {
+  width: 100%;
+}
+
 .day__container {
   padding: 12rem 0;
 }
