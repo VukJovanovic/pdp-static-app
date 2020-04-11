@@ -304,6 +304,34 @@ ul {
   width: 100%;
 }
 
+.form__addTextarea {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #f7ebec;
+  text-align: center;
+  padding: 0 2rem 1rem 2rem;
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  border-bottom: 1px solid #de3c4b;
+}
+
+.form__button {
+  width: 30rem;
+  padding: 1.5rem 0;
+  background-color: #de3c4b;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #f7ebec;
+}
+
 .day__container {
   padding: 12rem 0;
 }

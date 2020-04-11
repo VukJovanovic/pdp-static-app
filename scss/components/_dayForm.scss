@@ -84,3 +84,33 @@
 		width: 100%;
 	}
 }
+
+// ********** add textarea field
+.form__addTextarea {
+	font-family: $font-source-sans;
+	font-size: $font-size-1;
+	font-weight: $light;
+	color: $font-secondary;
+	text-align: center;
+	padding: 0 2rem 1rem 2rem;
+	display: block;
+	width: max-content;
+	margin: 0 auto;
+	border-bottom: 1px solid $color-danger;
+}
+
+// ************* form button styles
+.form__button {
+	width: 30rem;
+	padding: 1.5rem 0;
+	background-color: $color-danger;
+	border: none;
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 3rem;
+	font-size: $font-size-1;
+	font-weight: $light;
+	font-family: $font-source-sans;
+	color: $font-secondary;
+}
