@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+		/>
+		<title>Purpose Driven Planner</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<!--
+            *** Header
+            *** Prikazije se samo na mobilnim uredjajima1
+        -->
+		<header class="header">
+			<div class="header__user">
+				<p class="header__user-name">JD</p>
+			</div>
+			<a href="#" class="header__burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</header>
+
+		<!-- Sidebar -->
+		<!-- 
+            *** 
+         -->
+		<div class="sidebar">
+			<div class="sidebar__welcome">
+				<p class="sidebar__welcome-text">Welcome</p>
+				<p class="sidebar__welcome-name">John Doe</p>
+			</div>
+			<!-- Side bar navigation -->
+			<!-- 
+                *** Kad se klikne na neki link stavi klasu sidebar__navigation-link--active osim za logout
+             -->
+			<div class="sidebar__navigation">
+				<div class="sidebar__navigation-main">
+					<a
+						href="#"
+						class="sidebar__navigation-link sidebar__navigation-link--active"
+					>
+						<img src="./img/to-do-list.svg" alt="" class="sidebar__icon" />
+						<span>Planner</span>
+					</a>
+					<a href="#" class="sidebar__navigation-link">
+						<img src="./img/bell.svg" alt="" class="sidebar__icon" />
+						<span>Notifications</span>
+					</a>
+					<a href="#" class="sidebar__navigation-link">
+						<img src="./img/help.svg" alt="" class="sidebar__icon" />
+						<span>Support</span>
+					</a>
+				</div>
+				<div class="sidebar__navigation-account">
+					<a href="#" class="sidebar__navigation-link">
+						<img src="./img/settings.svg" alt="" class="sidebar__icon" />
+						<span>Account</span>
+					</a>
+					<a href="#" class="sidebar__navigation-logout">
+						<img src="./img/logout.svg" alt="" class="sidebar__icon" />
+						<span>Logout</span>
+					</a>
+				</div>
+			</div>
+			<!-- End of sidebar navigation-->
+		</div>
+		<!-- End of sidebar-->
+
+		<!-- 
+            *** Container
+            *** Container i content su obavezni, daju layout stranici. 
+            *** Sadrzaj unutar contenta se menja
+         -->
+		<div class="container">
+			<div class="content">
+				<div class="day__container">
+					<!-- 
+                        *** Deskripcija i navigacija za svaki dan
+                     -->
+					<div class="day__header">
+						<div class="day__header-description">
+							<p class="day__header-week">First Week</p>
+							<span class="day__header-separator">/</span>
+							<p class="day__header-day">Day 5</p>
+						</div>
+						<a href="#" class="day__header-btn">
+							<img src="./img/left-arrow.svg" class="day__header-icon" alt="" />
+							back
+						</a>
+					</div>
+					<!-- Day video -->
+					<div class="day__video"></div>
+					<!-- Day tool -->
+					<div class="day__tool">
+						<p class="day__tool-quote">
+							“Put your needs first so that you can help others.”
+						</p>
+						<p class="day__tool-author">Gabor Mate</p>
+					</div>
+					<!-- Day Form -->
+					<form action="#" class="day__form">
+						<h2 class="form__heading">
+							The 6 human needs tool:
+						</h2>
+						<p class="form__text">
+							On a scale from 1-10 rate on which level is each need being met in
+							your life:
+						</p>
+						<div class="form__group-row">
+							<label for="" class="form__label-row">
+								1. The need for certainty
+							</label>
+							<input
+								type="text"
+								name=""
+								id=""
+								class="form__input-row"
+								placeholder="( 1 - 10 )"
+							/>
+						</div>
+						<div class="form__group-row">
+							<label for="" class="form__label-row">
+								2. The need for variety
+							</label>
+							<input
+								type="text"
+								name=""
+								id=""
+								class="form__input-row"
+								placeholder="( 1 - 10 )"
+							/>
+						</div>
+						<div class="form__group-row">
+							<label for="" class="form__label-row">
+								3. The need for significance
+							</label>
+							<input
+								type="text"
+								name=""
+								id=""
+								class="form__input-row"
+								placeholder="( 1 - 10 )"
+							/>
+						</div>
+						<div class="form__group-row">
+							<label for="" class="form__label-row">
+								4. The need for love and connection
+							</label>
+							<input
+								type="text"
+								name=""
+								id=""
+								class="form__input-row"
+								placeholder="( 1 - 10 )"
+							/>
+						</div>
+						<div class="form__group-row">
+							<label for="" class="form__label-row">
+								5. The need for growth
+							</label>
+							<input
+								type="text"
+								name=""
+								id=""
+								class="form__input-row"
+								placeholder="( 1 - 10 )"
+							/>
+						</div>
+						<div class="form__group-row">
+							<label for="" class="form__label-row">
+								6. The need for contribution
+							</label>
+							<input
+								type="text"
+								name=""
+								id=""
+								class="form__input-row"
+								placeholder="( 1 - 10 )"
+							/>
+						</div>
+						<p class="form__text">
+							Start working on meeting the lowest rated ones right away.
+						</p>
+						<input type="submit" value="Save" class="form__button" />
+					</form>
+
+					<footer class="day__footer">
+						copyright &copy; 2020 Purpose Driven Planner
+					</footer>
+				</div>
+				<!-- End of day container -->
+			</div>
+			<!-- End of content -->
+		</div>
+		<!-- End of container -->
+	</body>
+</html>
