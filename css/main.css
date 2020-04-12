@@ -309,6 +309,7 @@ ul {
   font-size: 1.6rem;
   color: #f7ebec;
   background-color: #0a202e;
+  -webkit-appearance: none;
 }
 .day__form .form__input:focus,
 .day__form .form__textarea:focus {
@@ -333,6 +334,8 @@ ul {
   border-bottom: 1px solid #022e43;
   text-align: center;
   position: relative;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 .day__form .form__input-row:focus {
   outline: none;
