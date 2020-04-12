@@ -4,6 +4,19 @@
 	padding: 3rem 2rem;
 	border-radius: 20px;
 
+	@media only screen and(min-width: 550px) {
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 5rem;
+	}
+	@media only screen and(min-width: 950px) {
+		width: 80%;
+		padding: 4rem;
+		margin-top: 7rem;
+	}
+	@media only screen and(min-width: 1350px) {
+		width: 70%;
+	}
 	.form__heading {
 		text-align: center;
 		font-family: $font-source-sans;
@@ -11,6 +24,10 @@
 		color: $font-secondary;
 		font-weight: $light;
 		margin-bottom: 4rem;
+
+		@media only screen and(min-width: 1024px) {
+			font-size: 2.2rem;
+		}
 	}
 
 	.form__group {
@@ -28,6 +45,7 @@
 		font-weight: $light;
 		font-size: $font-size-2;
 		color: $font-secondary;
+		background-color: $color-primary;
 		&:focus {
 			outline: none;
 		}
@@ -36,7 +54,7 @@
 		resize: vertical;
 		background-color: $color-primary;
 		width: 100%;
-		height: 5rem;
+		height: 4rem;
 	}
 
 	// ********** form label styles
@@ -88,6 +106,15 @@
 	.form__textarea:focus + .form__label::after {
 		width: 100%;
 	}
+
+	// ********* Form questions
+	.form__question {
+		margin-bottom: 3rem;
+		font-family: $font-source-sans;
+		font-weight: $light;
+		font-size: $font-size-1;
+		color: $font-secondary;
+	}
 }
 
 // ********** add textarea field
@@ -104,6 +131,9 @@
 	border-bottom: 1px solid $color-danger;
 	transition: all 0.3s ease;
 	&:focus {
+		padding: 0 3rem 1rem 3rem;
+	}
+	&:hover {
 		padding: 0 3rem 1rem 3rem;
 	}
 }
@@ -124,8 +154,15 @@
 	color: $font-secondary;
 	-webkit-appearance: none;
 	transition: all 0.3s ease;
+	cursor: pointer;
 	&:focus {
 		outline: none;
 		transform: translateY(-5px);
+	}
+	&:hover {
+		transform: translateY(-5px);
+	}
+	@media only screen and(max-width: 400px) {
+		width: 25rem;
 	}
 }

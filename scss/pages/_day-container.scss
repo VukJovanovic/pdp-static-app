@@ -1,5 +1,9 @@
 .day__container {
-	padding: 12rem 0;
+	padding: 12rem 0 0 0;
+
+	@media only screen and(min-width: 800px) {
+		padding: 4rem 0 0 0;
+	}
 }
 
 .day__header {
@@ -41,6 +45,10 @@
 	&-icon {
 		width: 2rem;
 		margin-right: 1rem;
+		transition: all 0.3s ease;
+	}
+	.day__header-btn:hover .day__header-icon {
+		margin-right: 0.5rem;
 	}
 }
 
@@ -49,6 +57,23 @@
 	margin: 5rem 0;
 	height: 30rem;
 	background-color: $color-primary;
+
+	@media only screen and(min-width: 550px) {
+		width: 90%;
+		margin: 5rem auto;
+	}
+	@media only screen and(min-width: 950px) {
+		width: 80%;
+		margin: 7rem auto;
+	}
+	@media only screen and(min-width: 1200px) {
+		width: 70%;
+		height: 35rem;
+	}
+	@media only screen and(min-width: 1350px) {
+		width: 70%;
+		height: 40rem;
+	}
 }
 
 // ************* Day Tool styles
@@ -59,6 +84,9 @@
 	font-weight: $light;
 	color: $font-secondary;
 
+	@media only screen and(min-width: 1024px) {
+		font-size: 2.2rem;
+	}
 	&-quote {
 		padding-bottom: 1rem;
 		margin-bottom: 1rem;
@@ -77,4 +105,13 @@
 	&-author {
 		font-weight: $bold;
 	}
+}
+
+.day__footer {
+	font-family: $font-open-sans;
+	font-size: $font-size-3;
+	font-weight: $light;
+	color: $font-secondary;
+	text-align: center;
+	margin: 6rem 0 2rem 0;
 }

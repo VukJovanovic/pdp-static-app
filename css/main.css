@@ -58,6 +58,16 @@ ul {
   display: grid;
   grid-template-columns: 1fr;
 }
+@media only screen and (min-width: 800px) {
+  .container {
+    grid-template-columns: 25rem 1fr;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    grid-template-columns: 30rem 1fr;
+  }
+}
 .container .content {
   background-color: #022e43;
   min-height: 100vh;
@@ -65,8 +75,19 @@ ul {
   display: grid;
   grid-template-columns: minmax(30px, 1fr) minmax(min-content, 1000px) minmax(30px, 1fr);
 }
+@media only screen and (min-width: 800px) {
+  .container .content {
+    grid-column: 2/3;
+    grid-template-columns: minmax(50px, 1fr) minmax(min-content, 1000px) minmax(50px, 1fr);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container .content {
+    grid-template-columns: minmax(70px, 1fr) minmax(min-content, 1000px) minmax(70px, 1fr);
+  }
+}
 .container .day__container {
-  grid-column: 2/-3;
+  grid-column: 2/3;
 }
 
 .sidebar {
@@ -76,15 +97,17 @@ ul {
   width: 30rem;
   height: 100vh;
   background-color: #0a202e;
+  display: none;
 }
-@media only screen and (max-width: 1024) {
+@media only screen and (min-width: 800px) {
   .sidebar {
+    display: block;
     width: 25rem;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 1024px) {
   .sidebar {
-    display: none;
+    width: 30rem;
   }
 }
 .sidebar__welcome {
@@ -179,6 +202,7 @@ ul {
 }
 
 .header {
+  display: none;
   width: 100vw;
   height: 9rem;
   background-color: #0a202e;
@@ -233,6 +257,25 @@ ul {
   padding: 3rem 2rem;
   border-radius: 20px;
 }
+@media only screen and (min-width: 550px) {
+  .day__form {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .day__form {
+    width: 80%;
+    padding: 4rem;
+    margin-top: 7rem;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .day__form {
+    width: 70%;
+  }
+}
 .day__form .form__heading {
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
@@ -240,6 +283,11 @@ ul {
   color: #f7ebec;
   font-weight: 300;
   margin-bottom: 4rem;
+}
+@media only screen and (min-width: 1024px) {
+  .day__form .form__heading {
+    font-size: 2.2rem;
+  }
 }
 .day__form .form__group {
   position: relative;
@@ -254,6 +302,7 @@ ul {
   font-weight: 300;
   font-size: 1.6rem;
   color: #f7ebec;
+  background-color: #0a202e;
 }
 .day__form .form__input:focus,
 .day__form .form__textarea:focus {
@@ -263,7 +312,7 @@ ul {
   resize: vertical;
   background-color: #0a202e;
   width: 100%;
-  height: 5rem;
+  height: 4rem;
 }
 .day__form .form__label {
   position: absolute;
@@ -310,6 +359,13 @@ ul {
 .day__form .form__textarea:focus + .form__label::after {
   width: 100%;
 }
+.day__form .form__question {
+  margin-bottom: 3rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #f7ebec;
+}
 
 .form__addTextarea {
   font-family: "Source Sans Pro", sans-serif;
@@ -325,6 +381,9 @@ ul {
   transition: all 0.3s ease;
 }
 .form__addTextarea:focus {
+  padding: 0 3rem 1rem 3rem;
+}
+.form__addTextarea:hover {
   padding: 0 3rem 1rem 3rem;
 }
 
@@ -343,14 +402,28 @@ ul {
   color: #f7ebec;
   -webkit-appearance: none;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .form__button:focus {
   outline: none;
   transform: translateY(-5px);
 }
+.form__button:hover {
+  transform: translateY(-5px);
+}
+@media only screen and (max-width: 400px) {
+  .form__button {
+    width: 25rem;
+  }
+}
 
 .day__container {
-  padding: 12rem 0;
+  padding: 12rem 0 0 0;
+}
+@media only screen and (min-width: 800px) {
+  .day__container {
+    padding: 4rem 0 0 0;
+  }
 }
 
 .day__header {
@@ -391,12 +464,40 @@ ul {
 .day__header-icon {
   width: 2rem;
   margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+.day__header .day__header-btn:hover .day__header-icon {
+  margin-right: 0.5rem;
 }
 
 .day__video {
   margin: 5rem 0;
   height: 30rem;
   background-color: #0a202e;
+}
+@media only screen and (min-width: 550px) {
+  .day__video {
+    width: 90%;
+    margin: 5rem auto;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .day__video {
+    width: 80%;
+    margin: 7rem auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .day__video {
+    width: 70%;
+    height: 35rem;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .day__video {
+    width: 70%;
+    height: 40rem;
+  }
 }
 
 .day__tool {
@@ -405,6 +506,11 @@ ul {
   font-size: 1.8rem;
   font-weight: 300;
   color: #f7ebec;
+}
+@media only screen and (min-width: 1024px) {
+  .day__tool {
+    font-size: 2.2rem;
+  }
 }
 .day__tool-quote {
   padding-bottom: 1rem;
@@ -423,6 +529,15 @@ ul {
 }
 .day__tool-author {
   font-weight: 400;
+}
+
+.day__footer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #f7ebec;
+  text-align: center;
+  margin: 6rem 0 2rem 0;
 }
 
 /*# sourceMappingURL=/main.css.map */

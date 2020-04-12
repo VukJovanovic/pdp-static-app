@@ -2,6 +2,13 @@
 	display: grid;
 	grid-template-columns: 1fr;
 
+	@media only screen and(min-width: 800px) {
+		grid-template-columns: 25rem 1fr;
+	}
+	@media only screen and(min-width: 1024px) {
+		grid-template-columns: 30rem 1fr;
+	}
+
 	.content {
 		background-color: $color-secondary;
 		min-height: 100vh;
@@ -11,8 +18,22 @@
 				30px,
 				1fr
 			);
+
+		@media only screen and(min-width: 800px) {
+			grid-column: 2 / 3;
+			grid-template-columns: minmax(50px, 1fr) minmax(min-content, 1000px) minmax(
+					50px,
+					1fr
+				);
+		}
+		@media only screen and(min-width: 1200px) {
+			grid-template-columns: minmax(70px, 1fr) minmax(min-content, 1000px) minmax(
+					70px,
+					1fr
+				);
+		}
 	}
 	.day__container {
-		grid-column: 2 / -3;
+		grid-column: 2 / 3;
 	}
 }
