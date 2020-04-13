@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+		/>
+		<title>Purpose Driven Planner</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<!--
+            *** Header
+            *** Prikazije se samo na mobilnim uredjajima1
+        -->
+		<header class="header">
+			<div class="header__user">
+				<p class="header__user-name">JD</p>
+			</div>
+			<a href="#" class="header__burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</header>
+
+		<!-- Sidebar -->
+		<!-- 
+            *** 
+         -->
+		<div class="sidebar">
+			<div class="sidebar__welcome">
+				<p class="sidebar__welcome-text">Welcome</p>
+				<p class="sidebar__welcome-name">John Doe</p>
+			</div>
+			<!-- Side bar navigation -->
+			<!-- 
+                *** Kad se klikne na neki link stavi klasu sidebar__navigation-link--active osim za logout
+             -->
+			<div class="sidebar__navigation">
+				<div class="sidebar__navigation-main">
+					<a
+						href="#"
+						class="sidebar__navigation-link sidebar__navigation-link--active"
+					>
+						<img src="./img/to-do-list.svg" alt="" class="sidebar__icon" />
+						<span>Planner</span>
+					</a>
+					<a href="#" class="sidebar__navigation-link">
+						<img src="./img/bell.svg" alt="" class="sidebar__icon" />
+						<span>Notifications</span>
+					</a>
+					<a href="#" class="sidebar__navigation-link">
+						<img src="./img/help.svg" alt="" class="sidebar__icon" />
+						<span>Support</span>
+					</a>
+				</div>
+				<div class="sidebar__navigation-account">
+					<a href="#" class="sidebar__navigation-link">
+						<img src="./img/settings.svg" alt="" class="sidebar__icon" />
+						<span>Account</span>
+					</a>
+					<a href="#" class="sidebar__navigation-logout">
+						<img src="./img/logout.svg" alt="" class="sidebar__icon" />
+						<span>Logout</span>
+					</a>
+				</div>
+			</div>
+			<!-- End of sidebar navigation-->
+		</div>
+		<!-- End of sidebar-->
+
+		<!-- 
+            *** Container
+            *** Container i content su obavezni, daju layout stranici. 
+            *** Sadrzaj unutar contenta se menja
+         -->
+		<div class="container">
+			<div class="content">
+				<div class="day__container">
+					<!-- 
+                        *** Deskripcija i navigacija za svaki dan
+                     -->
+					<div class="day__header">
+						<div class="day__header-description">
+							<p class="day__header-week">Third Week</p>
+							<span class="day__header-separator">/</span>
+							<p class="day__header-day">Day 2</p>
+						</div>
+						<a href="#" class="day__header-btn">
+							<img src="./img/left-arrow.svg" class="day__header-icon" alt="" />
+							back
+						</a>
+					</div>
+					<!-- Day video -->
+					<div class="day__video"></div>
+					<!-- Day tool -->
+					<div class="day__tool">
+						<p class="day__tool-quote">
+							“The belief of an individual can override the crowd’s disbelief.”
+						</p>
+						<p class="day__tool-author">Greg Plitt</p>
+					</div>
+					<!-- Day Form -->
+					<form action="#" class="day__form">
+						<h2 class="form__heading"></h2>
+						<p class="form__text">
+							What are my top 3 self-limiting beliefs?
+						</p>
+						<div class="form__group">
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+								class="form__textarea"
+							></textarea>
+							<label for="" class="form__label">
+								<span class="form__label-content">type here</span>
+							</label>
+						</div>
+						<div class="form__group">
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+								class="form__textarea"
+							></textarea>
+							<label for="" class="form__label">
+								<span class="form__label-content">type here</span>
+							</label>
+						</div>
+						<div class="form__group">
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+								class="form__textarea"
+							></textarea>
+							<label for="" class="form__label">
+								<span class="form__label-content">type here</span>
+							</label>
+						</div>
+						<p class="form__text">
+							2. Where and when did I acquire them?
+						</p>
+						<div class="form__group">
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+								class="form__textarea"
+							></textarea>
+							<label for="" class="form__label">
+								<span class="form__label-content">type here</span>
+							</label>
+						</div>
+						<div class="form__group">
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+								class="form__textarea"
+							></textarea>
+							<label for="" class="form__label">
+								<span class="form__label-content">type here</span>
+							</label>
+						</div>
+						<div class="form__group">
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+								class="form__textarea"
+							></textarea>
+							<label for="" class="form__label">
+								<span class="form__label-content">type here</span>
+							</label>
+						</div>
+						<p class="form__text">
+							3. Which beliefs will override them now?
+						</p>
+						<div class="form__group">
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+								class="form__textarea"
+							></textarea>
+							<label for="" class="form__label">
+								<span class="form__label-content">type here</span>
+							</label>
+						</div>
+						<div class="form__group">
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+								class="form__textarea"
+							></textarea>
+							<label for="" class="form__label">
+								<span class="form__label-content">type here</span>
+							</label>
+						</div>
+						<div class="form__group">
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+								class="form__textarea"
+							></textarea>
+							<label for="" class="form__label">
+								<span class="form__label-content">type here</span>
+							</label>
+						</div>
+						<p class="form__text">
+							4. What supports my new beliefs?
+						</p>
+						<div class="form__group">
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+								class="form__textarea"
+							></textarea>
+							<label for="" class="form__label">
+								<span class="form__label-content">type here</span>
+							</label>
+						</div>
+						<div class="form__group">
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+								class="form__textarea"
+							></textarea>
+							<label for="" class="form__label">
+								<span class="form__label-content">type here</span>
+							</label>
+						</div>
+						<div class="form__group">
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+								class="form__textarea"
+							></textarea>
+							<label for="" class="form__label">
+								<span class="form__label-content">type here</span>
+							</label>
+						</div>
+						<input type="submit" value="Save" class="form__button" />
+					</form>
+
+					<footer class="day__footer">
+						copyright &copy; 2020 Purpose Driven Planner
+					</footer>
+				</div>
+				<!-- End of day container -->
+			</div>
+			<!-- End of content -->
+		</div>
+		<!-- End of container -->
+	</body>
+</html>
