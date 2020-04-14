@@ -196,6 +196,26 @@
 	}
 }
 
+// Form list styles
+.form__list {
+	border-bottom: 1px solid $color-secondary;
+	padding-bottom: 1rem;
+	&-heading {
+		font-family: $font-source-sans;
+		font-size: $font-size-4;
+		font-weight: $light;
+		color: $color-neutral;
+		margin-bottom: 2rem;
+	}
+	&-item {
+		font-family: $font-open-sans;
+		font-size: $font-size-1;
+		font-weight: $light;
+		color: $color-neutral;
+		margin-bottom: 0.5rem;
+	}
+}
+
 // ********** add textarea field
 .form__addTextarea {
 	font-family: $font-source-sans;
