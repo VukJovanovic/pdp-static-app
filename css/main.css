@@ -347,6 +347,22 @@ ul {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
+.day__form .form__input-small {
+  width: 15%;
+  border-bottom: 1px solid #022e43;
+  text-align: center;
+  margin-right: 1rem;
+}
+.day__form .form__input-small:focus {
+  border-bottom: 1px solid #f7ebec;
+}
+.day__form .form__input-big {
+  width: 80%;
+  border-bottom: 1px solid #022e43;
+}
+.day__form .form__input-big:focus {
+  border-bottom: 1px solid #f7ebec;
+}
 .day__form .form__label-row {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -405,14 +421,31 @@ ul {
   font-size: 1.8rem;
   color: #f7ebec;
 }
+.day__form .form__text-hint {
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #f7ebec;
+  padding-top: 1rem;
+  border-top: 1px solid #de3c4b;
+  text-align: center;
+}
+.day__form .form__text-center {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
 
 .form__addTextarea {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 300;
   color: #f7ebec;
   text-align: center;
-  padding: 0 2rem 1rem 2rem;
+  padding: 0 2rem 0.5rem 2rem;
   display: block;
   width: max-content;
   margin: 0 auto;
@@ -421,10 +454,10 @@ ul {
   margin-bottom: 4rem;
 }
 .form__addTextarea:focus {
-  padding: 0 3rem 1rem 3rem;
+  padding: 0 3rem 0.5rem 3rem;
 }
 .form__addTextarea:hover {
-  padding: 0 3rem 1rem 3rem;
+  padding: 0 3rem 0.5rem 3rem;
 }
 
 .form__button {
