@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+		/>
+		<title>Purpose Driven Planner</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<!--
+            *** Header
+            *** Prikazije se samo na mobilnim uredjajima1
+        -->
+		<header class="header">
+			<div class="header__user">
+				<p class="header__user-name">JD</p>
+			</div>
+			<a href="#" class="header__burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</header>
+
+		<!-- Sidebar -->
+		<!-- 
+            *** 
+         -->
+		<div class="sidebar">
+			<div class="sidebar__welcome">
+				<p class="sidebar__welcome-text">Welcome</p>
+				<p class="sidebar__welcome-name">John Doe</p>
+			</div>
+			<!-- Side bar navigation -->
+			<!-- 
+                *** Kad se klikne na neki link stavi klasu sidebar__navigation-link--active osim za logout
+             -->
+			<div class="sidebar__navigation">
+				<div class="sidebar__navigation-main">
+					<a
+						href="#"
+						class="sidebar__navigation-link sidebar__navigation-link--active"
+					>
+						<img src="./img/to-do-list.svg" alt="" class="sidebar__icon" />
+						<span>Planner</span>
+					</a>
+					<a href="#" class="sidebar__navigation-link">
+						<img src="./img/bell.svg" alt="" class="sidebar__icon" />
+						<span>Notifications</span>
+					</a>
+					<a href="#" class="sidebar__navigation-link">
+						<img src="./img/help.svg" alt="" class="sidebar__icon" />
+						<span>Support</span>
+					</a>
+				</div>
+				<div class="sidebar__navigation-account">
+					<a href="#" class="sidebar__navigation-link">
+						<img src="./img/settings.svg" alt="" class="sidebar__icon" />
+						<span>Account</span>
+					</a>
+					<a href="#" class="sidebar__navigation-logout">
+						<img src="./img/logout.svg" alt="" class="sidebar__icon" />
+						<span>Logout</span>
+					</a>
+				</div>
+			</div>
+			<!-- End of sidebar navigation-->
+		</div>
+		<!-- End of sidebar-->
+
+		<!-- 
+            *** Container
+            *** Container i content su obavezni, daju layout stranici. 
+            *** Sadrzaj unutar contenta se menja
+         -->
+		<div class="container">
+			<div class="content">
+				<div class="main__content">
+					<div class="welcome__quote">
+						<p class="welcome__quote-text">
+							“Every minute in planning saves 10 minutes in execution.”
+						</p>
+						<p class="welcome__quote-author">Brian Tracy</p>
+					</div>
+					<!-- Week container -->
+					<div class="week__container">
+						<a href="#" class="week">
+							<p class="week__number">First Week</p>
+							<div class="week__icon">
+								<img src="./img/down-arrow.svg" alt="" />
+							</div>
+						</a>
+					</div>
+					<div class="week__container">
+						<a href="#" class="week">
+							<p class="week__number">First Week</p>
+							<div class="week__icon">
+								<img src="./img/down-arrow.svg" alt="" />
+							</div>
+						</a>
+					</div>
+					<div class="week__container">
+						<a href="#" class="week">
+							<p class="week__number">First Week</p>
+							<div class="week__icon">
+								<img src="./img/down-arrow.svg" alt="" />
+							</div>
+						</a>
+					</div>
+					<div class="week__container">
+						<a href="#" class="week">
+							<p class="week__number">First Week</p>
+							<div class="week__icon">
+								<img src="./img/down-arrow.svg" alt="" />
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- End of main container -->
+			</div>
+			<!-- End of content -->
+		</div>
+		<!-- End of container -->
+	</body>
+</html>

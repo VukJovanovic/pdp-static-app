@@ -1,0 +1,72 @@
+.main__content {
+	padding: 12rem 0 0 0;
+
+	@media only screen and(min-width: 800px) {
+		padding: 4rem 0 0 0;
+	}
+}
+
+.welcome__quote {
+	text-align: center;
+	font-family: $font-source-sans;
+	font-size: $font-size-1;
+	font-weight: $light;
+	color: $font-secondary;
+	margin-bottom: 5rem;
+
+	@media only screen and(min-width: 1024px) {
+		font-size: 2.2rem;
+	}
+	&-text {
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 1px;
+			width: 4rem;
+			background-color: $color-danger;
+		}
+	}
+	&-author {
+		font-weight: $bold;
+	}
+}
+
+// *************** Week container styles
+.week__container {
+	margin-bottom: 3rem;
+}
+
+// *************** Week stlyes
+.week {
+	height: 7rem;
+	background-color: $color-primary;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 10px;
+	padding: 0 2rem;
+	&__number {
+		font-family: $font-source-sans;
+		font-size: $font-size-4;
+		font-weight: $light;
+		color: $font-secondary;
+	}
+	&__icon {
+		width: 3rem;
+		height: 3rem;
+		background-color: $color-danger;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 2rem;
+		}
+	}
+}
