@@ -1,6 +1,6 @@
 .main__content {
-	padding: 12rem 0 0 0;
-
+	padding: 14rem 0 0 0;
+	position: relative;
 	@media only screen and(min-width: 800px) {
 		padding: 4rem 0 0 0;
 	}
@@ -13,10 +13,13 @@
 	font-weight: $light;
 	color: $font-secondary;
 	margin-bottom: 5rem;
-
+	@media only screen and(min-width: 800px) {
+		margin-bottom: 10rem;
+	}
 	@media only screen and(min-width: 1024px) {
 		font-size: 2.2rem;
 	}
+
 	&-text {
 		padding-bottom: 1rem;
 		margin-bottom: 1rem;
@@ -51,6 +54,7 @@
 	justify-content: space-between;
 	border-radius: 10px;
 	padding: 0 2rem;
+	transition: transform 0.3s ease;
 	&__number {
 		font-family: $font-source-sans;
 		font-size: $font-size-4;
@@ -69,4 +73,21 @@
 			width: 2rem;
 		}
 	}
+	&:hover {
+		transform: translateY(-5px);
+	}
+}
+
+// ********* Footer styles
+.main__footer {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	padding: 2rem 0;
+	font-family: $font-open-sans;
+	font-size: $font-size-3;
+	font-weight: $light;
+	color: $font-secondary;
+	text-align: center;
 }

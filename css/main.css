@@ -12,6 +12,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  background-color: #022e43;
 }
 
 *,
@@ -114,6 +115,9 @@ ul {
   grid-column: 2/3;
 }
 .container .main__content {
+  grid-column: 2/3;
+}
+.container .notification__container {
   grid-column: 2/3;
 }
 
@@ -749,7 +753,8 @@ ul {
 }
 
 .main__content {
-  padding: 12rem 0 0 0;
+  padding: 14rem 0 0 0;
+  position: relative;
 }
 @media only screen and (min-width: 800px) {
   .main__content {
@@ -764,6 +769,11 @@ ul {
   font-weight: 300;
   color: #f7ebec;
   margin-bottom: 5rem;
+}
+@media only screen and (min-width: 800px) {
+  .welcome__quote {
+    margin-bottom: 10rem;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .welcome__quote {
@@ -809,6 +819,11 @@ ul {
           justify-content: space-between;
   border-radius: 10px;
   padding: 0 2rem;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .week__number {
   font-family: "Source Sans Pro", sans-serif;
@@ -833,6 +848,52 @@ ul {
 }
 .week__icon img {
   width: 2rem;
+}
+.week:hover {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.main__footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #f7ebec;
+  text-align: center;
+}
+
+.notification__container {
+  padding: 14rem 0;
+  position: relative;
+}
+@media only screen and (min-width: 800px) {
+  .notification__container {
+    padding: 4rem 0 0 0;
+  }
+}
+
+.notification__heading {
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #f7ebec;
+  padding-bottom: 0.5rem;
+}
+.notification__heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 5rem;
+  height: 1px;
+  background-color: #de3c4b;
 }
 
 /*# sourceMappingURL=/main.css.map */
