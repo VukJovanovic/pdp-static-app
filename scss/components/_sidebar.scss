@@ -2,13 +2,17 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 30rem;
+	width: 0;
+	overflow: hidden;
 	height: 100vh;
 	background-color: $color-primary;
-	display: none;
+	display: flex;
+	flex-direction: column;
+	z-index: $sidebar;
+	justify-content: center;
 	@media only screen and(min-width: 800px) {
-		display: block;
 		width: 25rem;
+		justify-content: space-between;
 	}
 	@media only screen and(min-width: 1024px) {
 		width: 30rem;
@@ -21,7 +25,10 @@
 		padding: 4rem 0;
 		text-align: center;
 		border-radius: 0 0 40px 40px;
-
+		display: none;
+		@media only screen and(min-width: 800px) {
+			display: block;
+		}
 		&-text {
 			font-family: $font-open-sans;
 			font-size: 2rem;
@@ -117,4 +124,27 @@
 	.sidebar__navigation-logout:hover.sidebar__navigation-logout img {
 		margin-right: 1.5rem;
 	}
+}
+
+.sidebarShow {
+	animation-name: showMobileNavigation;
+	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
+}
+
+.sidebarOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100vh;
+	z-index: $sidebarOverlay;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebarOverlay-show {
+	animation-name: showOverlay;
+	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.2s;
 }

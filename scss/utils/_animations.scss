@@ -1,21 +1,17 @@
-@keyframes weekDaysShow {
+@keyframes showMobileNavigation {
 	from {
-		opacity: 0;
-		height: 0;
+		width: 0;
 	}
 	to {
-		height: 20rem;
-		opacity: 1;
+		width: 60vw;
 	}
 }
 
-@keyframes weekDaysHide {
+@keyframes showOverlay {
 	from {
-		opacity: 1;
-		height: 20rem;
+		width: 0;
 	}
 	to {
-		opacity: 0;
-		height: 0;
+		width: 100vw;
 	}
 }
