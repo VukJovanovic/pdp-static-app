@@ -1,6 +1,7 @@
 .notification__container {
 	padding: 14rem 0;
 	position: relative;
+	transition: all 0.5s ease;
 	@media only screen and(min-width: 800px) {
 		padding: 4rem 0 0 0;
 	}
@@ -13,6 +14,8 @@
 	font-size: $font-size-4;
 	color: $font-secondary;
 	padding-bottom: 0.5rem;
+	margin-bottom: 5rem;
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -22,4 +25,57 @@
 		height: 1px;
 		background-color: $color-danger;
 	}
+}
+
+.notification {
+	height: max-content;
+	margin-bottom: 4rem;
+	transition: all 0.5s ease;
+	&__header {
+		background-color: $color-primary;
+		border-radius: 20px;
+		padding: 0 2rem;
+		height: 7rem;
+		display: flex;
+		align-items: center;
+
+		transition: all 0.5s ease;
+		justify-content: space-between;
+	}
+
+	&__title {
+		font-family: $font-source-sans;
+		font-weight: $light;
+		font-size: $font-size-1;
+		color: $font-secondary;
+	}
+	&__readMore {
+		font-family: $font-open-sans;
+		font-weight: $light;
+		font-size: $font-size-3;
+		color: $font-secondary;
+	}
+
+	&__body {
+		height: 0;
+		overflow: hidden;
+		padding: 0rem 2rem;
+		font-family: $font-open-sans;
+		font-weight: $light;
+		font-size: $font-size-2;
+		color: $font-secondary;
+	}
+
+	&__paragraph {
+		margin-bottom: 1rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.showNotificationBody {
+	animation-name: showNotification;
+	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
 }

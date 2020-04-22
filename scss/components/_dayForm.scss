@@ -17,183 +17,188 @@
 	@media only screen and(min-width: 1350px) {
 		width: 70%;
 	}
-	.form__heading {
-		text-align: center;
-		font-family: $font-source-sans;
-		font-size: $font-size-1;
-		color: $font-secondary;
-		font-weight: $light;
-		margin-bottom: 4rem;
+}
 
-		@media only screen and(min-width: 1024px) {
-			font-size: 2.2rem;
-		}
-	}
+.form__heading {
+	text-align: center;
+	font-family: $font-source-sans;
+	font-size: $font-size-1;
+	color: $font-secondary;
+	font-weight: $light;
+	margin-bottom: 4rem;
 
-	.form__group {
-		position: relative;
-		margin-bottom: 4rem;
+	@media only screen and(min-width: 1024px) {
+		font-size: 2.2rem;
 	}
-	// form group where content goes in a row label first then input next to it
-	.form__group-row {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		margin-bottom: 2rem;
-	}
+}
 
-	// ********* form input styles
-	.form__input,
-	.form__textarea {
-		width: 100%;
-		border: none;
-		padding: 0.5rem 1rem;
+.form__group {
+	position: relative;
+	margin-bottom: 4rem;
+}
+// form group where content goes in a row label first then input next to it
+.form__group-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+// ********* form input styles
+.form__input,
+.form__textarea {
+	width: 100%;
+	border: none;
+	padding: 0.5rem 1rem;
+	font-family: $font-open-sans;
+	font-weight: $light;
+	font-size: $font-size-2;
+	color: $font-secondary;
+	background-color: $color-primary;
+	-webkit-appearance: none;
+	&:focus {
+		outline: none;
+	}
+}
+.form__textarea {
+	resize: vertical;
+	background-color: $color-primary;
+	width: 100%;
+	height: 4rem;
+}
+
+.form__textarea-big {
+	height: 15rem;
+}
+
+// ********** form row input
+.form__input-row {
+	width: 30%;
+	border: none;
+	padding: 0.5rem 1rem;
+	font-family: $font-open-sans;
+	font-weight: $light;
+	font-size: $font-size-2;
+	color: $font-secondary;
+	background-color: $color-primary;
+	position: relative;
+	border-bottom: 1px solid $color-secondary;
+	text-align: center;
+	position: relative;
+	border-radius: 0;
+	-webkit-appearance: none;
+	&:focus {
+		outline: none;
+		border-bottom: 1px solid $color-neutral;
+	}
+	&::placeholder {
+		font-size: $font-size-3;
+		color: rgba($font-secondary, 0.3);
 		font-family: $font-open-sans;
 		font-weight: $light;
-		font-size: $font-size-2;
-		color: $font-secondary;
-		background-color: $color-primary;
-		-webkit-appearance: none;
-		&:focus {
-			outline: none;
-		}
 	}
-	.form__textarea {
-		resize: vertical;
-		background-color: $color-primary;
-		width: 100%;
-		height: 4rem;
-	}
+}
 
-	// ********** form row input
-	.form__input-row {
-		width: 30%;
-		border: none;
-		padding: 0.5rem 1rem;
-		font-family: $font-open-sans;
-		font-weight: $light;
-		font-size: $font-size-2;
-		color: $font-secondary;
-		background-color: $color-primary;
-		position: relative;
-		border-bottom: 1px solid $color-secondary;
-		text-align: center;
-		position: relative;
-		border-radius: 0;
-		-webkit-appearance: none;
-		&:focus {
-			outline: none;
-			border-bottom: 1px solid $color-neutral;
-		}
-		&::placeholder {
-			font-size: $font-size-3;
-			color: rgba($font-secondary, 0.3);
-			font-family: $font-open-sans;
-			font-weight: $light;
-		}
+// styles for 2 input in a row
+.form__input-small {
+	width: 15%;
+	border-bottom: 1px solid $color-secondary;
+	text-align: center;
+	&:focus {
+		border-bottom: 1px solid $color-neutral;
 	}
+	margin-right: 1rem;
+}
+.form__input-big {
+	width: 80%;
+	border-bottom: 1px solid $color-secondary;
+	&:focus {
+		border-bottom: 1px solid $color-neutral;
+	}
+}
 
-	// styles for 2 input in a row
-	.form__input-small {
-		width: 15%;
-		border-bottom: 1px solid $color-secondary;
-		text-align: center;
-		&:focus {
-			border-bottom: 1px solid $color-neutral;
-		}
-		margin-right: 1rem;
-	}
-	.form__input-big {
-		width: 80%;
-		border-bottom: 1px solid $color-secondary;
-		&:focus {
-			border-bottom: 1px solid $color-neutral;
-		}
-	}
+// ********* form row label
+.form__label-row {
+	font-family: $font-open-sans;
+	font-weight: $light;
+	font-size: $font-size-2;
+	color: $font-secondary;
+}
 
-	// ********* form row label
-	.form__label-row {
-		font-family: $font-open-sans;
-		font-weight: $light;
-		font-size: $font-size-2;
-		color: $font-secondary;
-	}
+// ********** form label styles
+.form__label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	font-family: $font-open-sans;
+	font-weight: $light;
+	font-size: $font-size-3;
+	color: rgba($font-secondary, 0.8);
+	border-bottom: 1px solid $color-secondary;
 
-	// ********** form label styles
-	.form__label {
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 1px;
+		background-color: rgba($color-neutral, 0.7);
+		transition: all 0.3s ease;
+	}
+	&-content {
 		position: absolute;
 		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		pointer-events: none;
-		font-family: $font-open-sans;
-		font-weight: $light;
-		font-size: $font-size-3;
-		color: rgba($font-secondary, 0.8);
-		border-bottom: 1px solid $color-secondary;
+		left: 1rem;
+		transition: all 0.3s ease;
+	}
+}
+.form__input:focus + .form__label .form__label-content,
+.form__input:not(:placeholder-shown) + .form__label .form__label-content {
+	transform: translateY(-2rem);
+	font-size: 1.4rem;
+	color: rgba($font-secondary, 0.6);
+}
 
-		&::after {
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 0;
-			height: 1px;
-			background-color: rgba($color-neutral, 0.7);
-			transition: all 0.3s ease;
-		}
-		&-content {
-			position: absolute;
-			top: 0;
-			left: 1rem;
-			transition: all 0.3s ease;
-		}
-	}
-	.form__input:focus + .form__label .form__label-content,
-	.form__input:not(:placeholder-shown) + .form__label .form__label-content {
-		transform: translateY(-2rem);
-		font-size: 1.4rem;
-		color: rgba($font-secondary, 0.6);
-	}
+// On text area focus label animation
+.form__textarea:focus + .form__label .form__label-content,
+.form__textarea:not(:placeholder-shown) + .form__label .form__label-content {
+	transform: translateY(-2rem);
+	font-size: 1.4rem;
+	color: rgba($font-secondary, 0.6);
+}
+.form__input:focus + .form__label::after,
+.form__textarea:focus + .form__label::after {
+	width: 100%;
+}
 
-	// On text area focus label animation
-	.form__textarea:focus + .form__label .form__label-content,
-	.form__textarea:not(:placeholder-shown) + .form__label .form__label-content {
-		transform: translateY(-2rem);
-		font-size: 1.4rem;
-		color: rgba($font-secondary, 0.6);
-	}
-	.form__input:focus + .form__label::after,
-	.form__textarea:focus + .form__label::after {
-		width: 100%;
-	}
-
-	// ********* Form text
-	.form__text {
-		margin-bottom: 3rem;
-		font-family: $font-source-sans;
-		font-weight: $light;
-		font-size: $font-size-1;
-		color: $font-secondary;
-	}
-	.form__text-hint {
-		margin-bottom: 3rem;
-		margin-top: 5rem;
-		font-family: $font-source-sans;
-		font-weight: $light;
-		font-size: $font-size-2;
-		color: $font-secondary;
-		padding-top: 1rem;
-		border-top: 1px solid $color-danger;
-		text-align: center;
-	}
-	.form__text-center {
-		text-align: center;
-		margin-top: 5rem;
-		font-size: 2rem;
-		font-weight: $bold;
-	}
+// ********* Form text
+.form__text {
+	margin-bottom: 3rem;
+	font-family: $font-source-sans;
+	font-weight: $light;
+	font-size: $font-size-1;
+	color: $font-secondary;
+}
+.form__text-hint {
+	margin-bottom: 3rem;
+	margin-top: 5rem;
+	font-family: $font-source-sans;
+	font-weight: $light;
+	font-size: $font-size-2;
+	color: $font-secondary;
+	padding-top: 1rem;
+	border-top: 1px solid $color-danger;
+	text-align: center;
+}
+.form__text-center {
+	text-align: center;
+	margin-top: 5rem;
+	font-size: 2rem;
+	font-weight: $bold;
 }
 
 // Form list styles
