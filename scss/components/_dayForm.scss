@@ -36,12 +36,49 @@
 	position: relative;
 	margin-bottom: 4rem;
 }
+
 // form group where content goes in a row label first then input next to it
 .form__group-row {
 	display: flex;
+	position: relative;
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 2rem;
+}
+
+.form__group-mb-1 {
+	margin-bottom: 5rem;
+}
+// ********* form range styles
+.form__range {
+	-webkit-appearance: none;
+	background-color: $color-secondary;
+	border-radius: 40px;
+	outline: none;
+	height: 10px;
+}
+.form__range::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 2rem;
+	height: 2rem;
+	background-color: $color-danger;
+	border-radius: 50%;
+}
+.form__range-value {
+	position: absolute;
+	right: 0;
+	top: -3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: $font-open-sans;
+	font-weight: $light;
+	font-size: $font-size-3;
+	color: $font-secondary;
+	background-color: $color-danger;
+	width: 2.2rem;
+	height: 2.2rem;
+	border-radius: 50%;
 }
 
 // ********* form input styles
@@ -199,6 +236,12 @@
 	margin-top: 5rem;
 	font-size: 2rem;
 	font-weight: $bold;
+}
+.form__range-text {
+	font-family: $font-source-sans;
+	font-weight: $light;
+	font-size: $font-size-1;
+	color: $font-secondary;
 }
 
 // Form list styles

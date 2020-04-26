@@ -78,10 +78,72 @@
 	}
 }
 
+// ********* Week days
+.week__days {
+	display: flex;
+	padding: 0 1.5rem;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+}
+
+.week__days-active {
+	animation: activeDays 0.8s forwards;
+}
+
+.week__day {
+	width: 15rem;
+	height: 15rem;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $color-primary;
+	margin-right: 1.5rem;
+	position: relative;
+	transition: 0.4s ease;
+	&:hover {
+		transform: translateY(-5px);
+	}
+
+	&-text {
+		font-family: $font-source-sans;
+		font-size: $font-size-4;
+		color: $font-secondary;
+		font-weight: $light;
+		margin-bottom: 1rem;
+	}
+	&-number {
+		font-family: $font-open-sans;
+		font-size: 5rem;
+		color: $font-secondary;
+		font-weight: $light;
+	}
+}
+.day__overlay {
+	display: none;
+}
+.week__day-locked .day__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	z-index: 2;
+	background-color: $color-primary;
+	img {
+		width: 4rem;
+	}
+}
+
 // ********* Footer styles
 .main__footer {
-	position: absolute;
-	bottom: 0;
 	text-align: center;
 	width: 100%;
 	padding: 2rem 0;

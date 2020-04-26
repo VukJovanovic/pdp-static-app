@@ -85,7 +85,10 @@
 						</p>
 						<p class="welcome__quote-author">Brian Tracy</p>
 					</div>
-					<!-- Week container -->
+					<!-- 
+						***** Week container 
+						***** Kad se klikne na neki week dodaje se clasa week__days-active divu week__days
+					-->
 					<div class="week__container">
 						<a href="#" class="week">
 							<p class="week__number">First Week</p>
@@ -93,6 +96,19 @@
 								<img src="./img/down-arrow.svg" alt="" />
 							</div>
 						</a>
+						<div class="week__days week__days-active">
+							<a href="#" class="week__day">
+								<p class="week__day-text">Day</p>
+								<p class="week__day-number">1</p>
+							</a>
+							<a href="#" class="week__day week__day-locked">
+								<p class="week__day-text">Day</p>
+								<p class="week__day-number">2</p>
+								<div class="day__overlay">
+									<img src="/img/lock.svg" alt="" />
+								</div>
+							</a>
+						</div>
 					</div>
 					<div class="week__container">
 						<a href="#" class="week">
@@ -101,6 +117,19 @@
 								<img src="./img/password.svg" alt="" />
 							</div>
 						</a>
+						<div class="week__days">
+							<a href="#" class="week__day">
+								<p class="week__day-text">Day</p>
+								<p class="week__day-number">1</p>
+							</a>
+							<a href="#" class="week__day week__day-locked">
+								<p class="week__day-text">Day</p>
+								<p class="week__day-number">2</p>
+								<div class="day__overlay">
+									<img src="/img/lock.svg" alt="" />
+								</div>
+							</a>
+						</div>
 					</div>
 					<div class="week__container">
 						<a href="#" class="week">
