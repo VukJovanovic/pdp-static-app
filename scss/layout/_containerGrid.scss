@@ -12,6 +12,7 @@
 	.content {
 		background-color: $color-secondary;
 		min-height: 100vh;
+		position: relative;
 		grid-column: 1 / -1;
 		display: grid;
 		grid-template-columns: minmax(30px, 1fr) minmax(min-content, 1000px) minmax(
