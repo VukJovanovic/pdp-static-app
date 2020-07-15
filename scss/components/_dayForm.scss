@@ -15,7 +15,7 @@
 		margin-top: 7rem;
 	}
 	@media only screen and(min-width: 1350px) {
-		width: 70%;
+		width: 90%;
 	}
 }
 
@@ -265,7 +265,13 @@
 }
 
 // ********** add textarea field
-.form__addTextarea {
+// Add more inputs or delete
+.form__btnGroup {
+	display: flex;
+	justify-content: space-between;
+}
+.form__addTextarea,
+.form__removeTextarea {
 	font-family: $font-source-sans;
 	font-size: $font-size-2;
 	font-weight: $light;
@@ -275,15 +281,21 @@
 	display: block;
 	width: max-content;
 	margin: 0 auto;
-	border-bottom: 1px solid $color-danger;
 	transition: all 0.3s ease;
 	margin-bottom: 4rem;
 	&:focus {
 		padding: 0 3rem 0.5rem 3rem;
 	}
 	&:hover {
-		padding: 0 3rem 0.5rem 3rem;
+		transform: translateY(-5px);
 	}
+}
+.form__addTextarea {
+	border-bottom: 1px solid $color-danger;
+}
+
+.form__removeTextarea {
+	border-bottom: 1px solid $color-red;
 }
 
 // ************* form button styles
