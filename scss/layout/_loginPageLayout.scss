@@ -1,0 +1,39 @@
+.loginContainer {
+	display: grid;
+	width: 100vw;
+	height: 100%;
+	background-color: $color-secondary;
+	grid-template-columns: 1fr 3fr;
+	@media only screen and(max-width: 720px) {
+		grid-template-columns: 1fr;
+	}
+	&__left {
+		display: grid;
+		grid-template-columns: minmax(130px, 1fr) 3fr;
+		background-color: $color-primary;
+		padding: 5rem 0rem;
+
+		@media only screen and(max-width: 1024px) {
+			grid-template-columns: minmax(50px, 1fr) 1fr;
+		}
+		@media only screen and(max-width: 720px) {
+			display: none;
+		}
+	}
+
+	&__right {
+		display: grid;
+		grid-template-columns: 3fr minmax(130px, 1fr);
+		@media only screen and(max-width: 1024px) {
+			grid-template-columns: 6fr minmax(70px, 1fr);
+		}
+		@media only screen and(max-width: 720px) {
+			grid-template-columns: 1fr;
+			padding: 0 2rem;
+		}
+	}
+
+	&__infoContainer {
+		grid-column: 2 / 3;
+	}
+}

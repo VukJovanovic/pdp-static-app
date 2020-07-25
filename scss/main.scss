@@ -8,6 +8,7 @@
 
 // Layout files
 @import './layout/containerGrid';
+@import './layout/loginPageLayout';
 
 // Components files
 @import './components/loader';
@@ -22,3 +23,4 @@
 @import './pages/support';
 @import './pages/notifications';
 @import './pages/account';
+@import './pages/login';

@@ -1,0 +1,82 @@
+.loginContainer {
+	// ******
+	// quote styles
+	// ******
+	&__infoContainer {
+		border-left: 1px solid $color-secondary;
+		padding: 2rem;
+	}
+
+	.login__info {
+		&-heading {
+			font-size: $font-size-1;
+			font-weight: $bold;
+			font-family: $font-source-sans;
+			color: $font-secondary;
+			margin-bottom: 2rem;
+		}
+		&-text {
+			font-size: $font-size-2;
+			font-weight: $light;
+			font-family: $font-open-sans;
+			color: $font-secondary;
+		}
+	}
+
+	// ******
+	// Login form styles
+	// ******
+	&__formContainer {
+		display: flex;
+		padding-top: 5rem;
+		align-items: center;
+		flex-direction: column;
+		@media only screen and(max-width: 720px) {
+			justify-content: center;
+		}
+	}
+
+	&__formLogo {
+		font-size: $font-size-4;
+		font-family: $font-open-sans;
+		font-weight: $bold;
+		color: $font-secondary;
+		margin-bottom: 5rem;
+	}
+
+	&__formHeading {
+		font-size: $font-size-big;
+		font-family: $font-source-sans;
+		color: $font-secondary;
+		font-weight: $bold;
+		position: relative;
+		padding-bottom: 0.5rem;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 50%;
+			height: 1px;
+			background-color: $color-danger;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__formSubHeading {
+		font-size: $font-size-1;
+		font-family: $font-open-sans;
+		color: $font-secondary;
+		font-weight: $light;
+		margin-top: 1rem;
+	}
+
+	&__form {
+		max-width: 500px;
+		margin-top: 4rem;
+		@media only screen and(max-width: 720px) {
+			width: 100%;
+		}
+	}
+}

@@ -46,6 +46,36 @@
 	margin-bottom: 2rem;
 }
 
+// form group with links
+.form__group-link {
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
+	align-items: center;
+	@media only screen and(max-width: 355px) {
+		flex-direction: column;
+	}
+	p {
+		font-size: $font-size-2;
+		font-family: $font-open-sans;
+		font-weight: $light;
+		color: $font-secondary;
+		margin-right: 2rem;
+		@media only screen and(max-width: 355px) {
+			margin: 0 0 1rem 0;
+		}
+	}
+}
+
+.form__link {
+	font-size: $font-size-2;
+	font-family: $font-open-sans;
+	font-weight: $light;
+	color: $font-secondary;
+	border-bottom: 1px solid $color-danger;
+	padding-bottom: 0.2rem;
+}
+
 .form__group-mb-1 {
 	margin-bottom: 5rem;
 }
@@ -86,7 +116,7 @@
 .form__textarea {
 	width: 100%;
 	border: none;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 1rem 1rem 1rem;
 	font-family: $font-open-sans;
 	font-weight: $light;
 	font-size: $font-size-2;
@@ -112,7 +142,7 @@
 .form__input-row {
 	width: 30%;
 	border: none;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 1rem 1rem 1rem;
 	font-family: $font-open-sans;
 	font-weight: $light;
 	font-size: $font-size-2;
@@ -190,6 +220,8 @@
 		position: absolute;
 		top: 0;
 		left: 1rem;
+		display: flex;
+		align-items: center;
 		transition: all 0.3s ease;
 	}
 }
@@ -210,6 +242,12 @@
 .form__input:focus + .form__label::after,
 .form__textarea:focus + .form__label::after {
 	width: 100%;
+}
+
+// ********* form icon
+.form__icon {
+	width: 2rem;
+	margin-right: 1rem;
 }
 
 // ********* Form text
@@ -309,7 +347,7 @@
 	margin: 0 auto;
 	margin-top: 4rem;
 	font-size: $font-size-1;
-	font-weight: $light;
+	font-weight: $bold;
 	font-family: $font-source-sans;
 	color: $font-secondary;
 	-webkit-appearance: none;
@@ -324,5 +362,22 @@
 	}
 	@media only screen and(max-width: 400px) {
 		width: 25rem;
+	}
+}
+
+// ********
+// Form error
+// ********
+.form__error {
+	&-message {
+		font-size: $font-size-1;
+		text-align: center;
+		font-family: $font-source-sans;
+		font-weight: $bold;
+		color: $font-secondary;
+		background-color: $color-red;
+		border-radius: 10px;
+		padding: 1rem 1rem;
+		margin-bottom: 4rem;
 	}
 }
