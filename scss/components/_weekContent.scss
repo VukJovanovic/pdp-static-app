@@ -47,10 +47,6 @@
 	justify-content: center;
 }
 
-.week__days-active {
-	animation: activeDays 0.8s forwards;
-}
-
 .week__day {
 	width: 15rem;
 	height: 15rem;
@@ -59,6 +55,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 1rem 0;
 	background-color: $color-primary;
 	margin-right: 1.5rem;
 	position: relative;
@@ -70,7 +67,6 @@
 		font-size: $font-size-4;
 		color: $font-secondary;
 		font-weight: $light;
-		margin-bottom: 1rem;
 	}
 	&-number {
 		font-family: $font-open-sans;
@@ -78,7 +74,17 @@
 		color: $font-secondary;
 		font-weight: $light;
 	}
+
+	&-success {
+		display: none;
+		width: 2rem;
+	}
 }
+
+.dayCompleted .week__day-success {
+	display: block;
+}
+
 .day__overlay {
 	display: none;
 }
