@@ -80,27 +80,60 @@
 		<div class="container">
 			<div class="content">
 				<!-- Loader -->
-				<div class="loader__container">
+				<!-- <div class="loader__container">
 					<div class="loader__container-spinner"></div>
-				</div>
+				</div> -->
 				<div class="main__content">
 					<!-- 
 						***** Week container 
 						***** Kad se klikne na neki week dodaje se clasa week__days-active divu week__days
 					-->
+					<div class="progressCircle__container">
+						<div class="progressCircle__circle">
+							<svg>
+								<circle cx="60" cy="60" r="60"></circle>
+								<circle cx="60" cy="60" r="60"></circle>
+							</svg>
+							<img
+								src="./img/trophy.svg"
+								alt=""
+								class="progressCircle__trophy"
+							/>
+						</div>
+						<div class="progressCircle__completed">Completed</div>
+						<div class="progressCircle__days">
+							<span class="progressCircle__days-current">1</span>
+							<span class="progressCircle__days-all">of 28 days</span>
+						</div>
+					</div>
+
 					<div class="week__container">
-						<a href="#" class="week">
+						<a href="#" class="week" id="firstWeek">
 							<p class="week__number">First Week</p>
 							<div class="week__icon">
 								<img src="./img/down-arrow.svg" alt="" />
 							</div>
 						</a>
-						<div class="week__days week__days-active">
-							<a href="#" class="week__day">
+						<div class="week__days">
+							<a href="#" class="week__day firstWeekDays">
 								<p class="week__day-text">Day</p>
 								<p class="week__day-number">1</p>
 							</a>
-							<a href="#" class="week__day week__day-locked">
+							<a href="#" class="week__day week__day-locked firstWeekDays">
+								<p class="week__day-text">Day</p>
+								<p class="week__day-number">2</p>
+								<div class="day__overlay">
+									<img src="/img/lock.svg" alt="" />
+								</div>
+							</a>
+							<a href="#" class="week__day week__day-locked firstWeekDays">
+								<p class="week__day-text">Day</p>
+								<p class="week__day-number">2</p>
+								<div class="day__overlay">
+									<img src="/img/lock.svg" alt="" />
+								</div>
+							</a>
+							<a href="#" class="week__day week__day-locked firstWeekDays">
 								<p class="week__day-text">Day</p>
 								<p class="week__day-number">2</p>
 								<div class="day__overlay">
@@ -110,18 +143,39 @@
 						</div>
 					</div>
 					<div class="week__container">
-						<a href="#" class="week">
+						<a href="#" class="week" id="secondWeek">
 							<p class="week__number">Second Week</p>
 							<div class="week__icon">
 								<img src="./img/password.svg" alt="" />
 							</div>
 						</a>
 						<div class="week__days">
-							<a href="#" class="week__day">
+							<a href="#" class="week__day secondWeekDays">
 								<p class="week__day-text">Day</p>
 								<p class="week__day-number">1</p>
 							</a>
-							<a href="#" class="week__day week__day-locked">
+							<a href="#" class="week__day week__day-locked secondWeekDays">
+								<p class="week__day-text">Day</p>
+								<p class="week__day-number">2</p>
+								<div class="day__overlay">
+									<img src="/img/lock.svg" alt="" />
+								</div>
+							</a>
+							<a href="#" class="week__day week__day-locked secondWeekDays">
+								<p class="week__day-text">Day</p>
+								<p class="week__day-number">2</p>
+								<div class="day__overlay">
+									<img src="/img/lock.svg" alt="" />
+								</div>
+							</a>
+							<a href="#" class="week__day week__day-locked secondWeekDays">
+								<p class="week__day-text">Day</p>
+								<p class="week__day-number">2</p>
+								<div class="day__overlay">
+									<img src="/img/lock.svg" alt="" />
+								</div>
+							</a>
+							<a href="#" class="week__day week__day-locked secondWeekDays">
 								<p class="week__day-text">Day</p>
 								<p class="week__day-number">2</p>
 								<div class="day__overlay">
@@ -146,6 +200,7 @@
 							</div>
 						</a>
 					</div>
+
 					<div class="main__footer">
 						copyright &copy; 2020 Purpose Driven Planner
 					</div>
@@ -155,5 +210,7 @@
 			<!-- End of content -->
 		</div>
 		<!-- End of container -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+		<script src="./js/bundle.js"></script>
 	</body>
 </html>

@@ -27,10 +27,12 @@
 	// Login form styles
 	// ******
 	&__formContainer {
+		min-height: 100vh;
 		display: flex;
 		padding-top: 5rem;
 		align-items: center;
 		flex-direction: column;
+		padding-bottom: 5rem;
 		@media only screen and(max-width: 720px) {
 			justify-content: center;
 		}
@@ -73,10 +75,18 @@
 	}
 
 	&__form {
+		padding: 6rem 2rem 4rem 2rem;
 		max-width: 500px;
 		margin-top: 4rem;
 		@media only screen and(max-width: 720px) {
 			width: 100%;
+		}
+
+		.form__input:focus + .form__label .form__label-content,
+		.form__input:not(:placeholder-shown) + .form__label .form__label-content {
+			transform: translateY(-3rem);
+			font-size: 1.4rem;
+			color: rgba($font-secondary, 0.6);
 		}
 	}
 }

@@ -1,0 +1,62 @@
+.progressCircle__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 5rem;
+	position: relative;
+}
+
+.progressCircle__circle {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+	svg {
+		width: 130px;
+		height: 130px;
+	}
+	svg circle {
+		width: 130px;
+		height: 130px;
+		fill: none;
+		stroke-width: 5;
+		stroke: $color-primary;
+		transform: translate(5px, 5px);
+		stroke-dasharray: 440;
+		stroke-dashoffset: 440;
+		stroke-linecap: round;
+	}
+	svg circle:nth-child(1) {
+		stroke-dashoffset: 0;
+	}
+	svg circle:nth-child(2) {
+		stroke-dashoffset: 430;
+		stroke: $color-danger;
+	}
+}
+
+.progressCircle__trophy {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 5rem;
+}
+
+.progressCircle__completed {
+	font-family: $font-source-sans;
+	font-size: $font-size-2;
+	font-weight: $light;
+	color: $font-secondary;
+	padding-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
+	border-bottom: 1px solid $color-danger;
+}
+
+.progressCircle__days {
+	color: $font-secondary;
+	font-family: $font-open-sans;
+	font-size: $font-size-2;
+	font-weight: $light;
+}

@@ -122,6 +122,7 @@
 	font-size: $font-size-2;
 	color: $font-secondary;
 	background-color: $color-primary;
+	position: relative;
 	-webkit-appearance: none;
 	&:focus {
 		outline: none;
@@ -132,6 +133,17 @@
 	background-color: $color-primary;
 	width: 100%;
 	height: 4rem;
+}
+
+.form__textarea::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 2rem;
+	background-color: black;
 }
 
 .form__textarea-big {
