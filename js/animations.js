@@ -1,5 +1,8 @@
 const showWeekDays = (days) => {
-	TweenMax.to(days[0].parentNode, 0.5, { padding: '1.5rem', height: '20rem' });
+	TweenMax.to(days[0].parentNode, 0.8, {
+		padding: '1.5rem',
+		height: 'auto',
+	});
 	let delay = 0.5;
 	days.forEach((day) => {
 		TweenMax.to(day, 0.6, {
@@ -23,7 +26,7 @@ const hideWeekDays = (days) => {
 	});
 	TweenMax.to(days[0].parentNode, 0.4, {
 		padding: '0rem 1.5rem',
-		height: '0',
+		height: 0,
 		delay,
 	});
 };
