@@ -49,7 +49,10 @@
 
 	&__navigation {
 		padding: 10rem 0rem 5rem 0rem;
-
+		opacity: 0;
+		@media only screen and(min-width: 800px) {
+			opacity: 1;
+		}
 		// Navigation link styles
 		&-link {
 			display: flex;
@@ -135,7 +138,7 @@
 .sidebarOverlay {
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	width: 0;
 	height: 100vh;
 	z-index: $sidebarOverlay;

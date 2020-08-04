@@ -1,4 +1,13 @@
-import { showWeekDays, hideWeekDays } from './animations';
+import {
+	showWeekDays,
+	hideWeekDays,
+	showSidebar,
+	hideSidebar,
+} from './animations';
+
+// ***************
+// Animacije - Nedelje i dani
+// ***************
 
 const firstWeekBtn = document.querySelector('#firstWeek');
 const firstWeekDays = [...document.querySelectorAll('.firstWeekDays')];
@@ -29,5 +38,25 @@ if (secondWeekBtn) {
 			showWeekDays(secondWeekDays);
 			secondWeekBtn.classList.add('activeWeek');
 		}
+	});
+}
+
+// ***************
+// Funkcionalnost mobilnog menija
+// ***************
+const mobileMenuBtn = document.querySelector('.header__burger');
+const closeMobileMenuBtn = document.querySelector('.header__mobileCloseBtn');
+
+if (mobileMenuBtn) {
+	mobileMenuBtn.addEventListener('click', (e) => {
+		e.preventDefault();
+		showSidebar();
+	});
+}
+
+if (closeMobileMenuBtn) {
+	closeMobileMenuBtn.addEventListener('click', (e) => {
+		e.preventDefault();
+		hideSidebar();
 	});
 }

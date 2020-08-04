@@ -52,6 +52,8 @@
 	// Mobile navigation close btn
 	&__mobileCloseBtn {
 		display: none;
+		opacity: 0;
+		transform: translateX(5px);
 		img {
 			width: 2.5rem;
 		}
