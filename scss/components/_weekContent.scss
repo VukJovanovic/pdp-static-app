@@ -39,17 +39,18 @@
 // ********* Week days
 .week__days {
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0rem 1.5rem;
+	grid-gap: 1.5rem;
 	width: 100%;
 	overflow: hidden;
 	height: 0;
-	flex-wrap: wrap;
 	justify-content: center;
 }
 
 .week__day {
-	width: 15rem;
 	height: 15rem;
+	width: 15rem;
 	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
@@ -57,11 +58,21 @@
 	align-items: center;
 	padding: 1rem 0;
 	background-color: $color-primary;
-	margin-right: 1.5rem;
 	position: relative;
 	transform: translateY(-50px);
 	opacity: 0;
-	margin-bottom: 1rem;
+
+	@media only screen and(max-width: 410px) {
+		width: 13rem;
+		height: 13rem;
+		padding: 1.5rem 0;
+	}
+	@media only screen and(max-width: 375px) {
+		width: 11rem;
+		height: 11rem;
+		padding: 1.5rem 0;
+	}
+
 	&-text {
 		font-family: $font-source-sans;
 		font-size: $font-size-4;
@@ -73,6 +84,9 @@
 		font-size: 5rem;
 		color: $font-secondary;
 		font-weight: $light;
+		@media only screen and(max-width: 410px) {
+			font-size: 3rem;
+		}
 	}
 
 	&-success {

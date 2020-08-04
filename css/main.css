@@ -1034,20 +1034,21 @@ textarea::-webkit-scrollbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0rem 1.5rem;
+  grid-gap: 1.5rem;
   width: 100%;
   overflow: hidden;
   height: 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .week__day {
-  width: 15rem;
   height: 15rem;
+  width: 15rem;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1064,13 +1065,25 @@ textarea::-webkit-scrollbar {
           align-items: center;
   padding: 1rem 0;
   background-color: #0a202e;
-  margin-right: 1.5rem;
   position: relative;
   -webkit-transform: translateY(-50px);
       -ms-transform: translateY(-50px);
           transform: translateY(-50px);
   opacity: 0;
-  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 410px) {
+  .week__day {
+    width: 13rem;
+    height: 13rem;
+    padding: 1.5rem 0;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .week__day {
+    width: 11rem;
+    height: 11rem;
+    padding: 1.5rem 0;
+  }
 }
 .week__day-text {
   font-family: "Source Sans Pro", sans-serif;
@@ -1083,6 +1096,11 @@ textarea::-webkit-scrollbar {
   font-size: 5rem;
   color: #f7ebec;
   font-weight: 300;
+}
+@media only screen and (max-width: 410px) {
+  .week__day-number {
+    font-size: 3rem;
+  }
 }
 .week__day-success {
   display: none;
