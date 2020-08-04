@@ -1037,7 +1037,6 @@ textarea::-webkit-scrollbar {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0rem 1.5rem;
-  grid-gap: 1.5rem;
   width: 100%;
   overflow: hidden;
   height: 0;
@@ -1064,6 +1063,7 @@ textarea::-webkit-scrollbar {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 0;
+  margin: 1rem;
   background-color: #0a202e;
   position: relative;
   -webkit-transform: translateY(-50px);
@@ -1071,18 +1071,17 @@ textarea::-webkit-scrollbar {
           transform: translateY(-50px);
   opacity: 0;
 }
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 430px) {
   .week__day {
     width: 13rem;
     height: 13rem;
-    padding: 1.5rem 0;
+    margin: 0.5rem;
   }
 }
 @media only screen and (max-width: 375px) {
   .week__day {
     width: 11rem;
     height: 11rem;
-    padding: 1.5rem 0;
   }
 }
 .week__day-text {
@@ -1098,6 +1097,11 @@ textarea::-webkit-scrollbar {
   font-weight: 300;
 }
 @media only screen and (max-width: 410px) {
+  .week__day-number {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 375px) {
   .week__day-number {
     font-size: 3rem;
   }
