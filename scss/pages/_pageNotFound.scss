@@ -1,0 +1,26 @@
+.pageNotFound__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.pageNotFound__image {
+	width: 10rem;
+	margin-bottom: 2rem;
+}
+.pageNotFound__subheading {
+	font-size: 2.5rem;
+	color: $font-secondary;
+	font-family: $font-open-sans;
+	font-weight: $light;
+}
+.pageNotFound__button {
+	margin-top: 2rem;
+	font-size: 1.8rem;
+	color: $font-secondary;
+	font-family: $font-open-sans;
+	font-weight: $light;
+	padding-bottom: 0.2rem;
+	border-bottom: 1px solid $color-danger;
+}

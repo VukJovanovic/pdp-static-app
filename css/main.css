@@ -150,6 +150,9 @@ textarea::-webkit-scrollbar {
 .container .account__container {
   grid-column: 2/3;
 }
+.container .pageNotFound__container {
+  grid-column: 2/3;
+}
 
 .loginContainer {
   display: grid;
@@ -1096,12 +1099,7 @@ textarea::-webkit-scrollbar {
   color: #f7ebec;
   font-weight: 300;
 }
-@media only screen and (max-width: 410px) {
-  .week__day-number {
-    font-size: 4rem;
-  }
-}
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 430px) {
   .week__day-number {
     font-size: 3rem;
   }
@@ -1647,6 +1645,44 @@ textarea::-webkit-scrollbar {
           transform: translateY(-3rem);
   font-size: 1.4rem;
   color: rgba(247, 235, 236, 0.6);
+}
+
+.pageNotFound__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pageNotFound__image {
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+
+.pageNotFound__subheading {
+  font-size: 2.5rem;
+  color: #f7ebec;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.pageNotFound__button {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  color: #f7ebec;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #2bc48a;
 }
 
 /*# sourceMappingURL=/main.css.map */

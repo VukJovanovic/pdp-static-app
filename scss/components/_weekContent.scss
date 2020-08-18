@@ -83,10 +83,7 @@
 		font-size: 5rem;
 		color: $font-secondary;
 		font-weight: $light;
-		@media only screen and(max-width: 410px) {
-			font-size: 4rem;
-		}
-		@media only screen and(max-width: 375px) {
+		@media only screen and(max-width: 430px) {
 			font-size: 3rem;
 		}
 	}
