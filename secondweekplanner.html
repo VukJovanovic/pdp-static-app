@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+		/>
+		<title>Purpose Driven Planner</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<!--
+            *** Header
+            *** Prikazije se samo na mobilnim uredjajima1
+        -->
+		<header class="header">
+			<div class="header__user">
+				<p class="header__user-name">JD</p>
+			</div>
+			<a href="#" class="header__burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</header>
+
+		<!-- Sidebar -->
+		<!-- 
+            *** 
+         -->
+		<div class="sidebar">
+			<div class="sidebar__welcome">
+				<p class="sidebar__welcome-text">Welcome</p>
+				<p class="sidebar__welcome-name">John Doe</p>
+			</div>
+			<!-- Side bar navigation -->
+			<!-- 
+                *** Kad se klikne na neki link stavi klasu sidebar__navigation-link--active osim za logout
+             -->
+			<div class="sidebar__navigation">
+				<div class="sidebar__navigation-main">
+					<a
+						href="#"
+						class="sidebar__navigation-link sidebar__navigation-link--active"
+					>
+						<img src="./img/to-do-list.svg" alt="" class="sidebar__icon" />
+						<span>Planner</span>
+					</a>
+					<a href="#" class="sidebar__navigation-link">
+						<img src="./img/bell.svg" alt="" class="sidebar__icon" />
+						<span>Notifications</span>
+					</a>
+					<a href="#" class="sidebar__navigation-link">
+						<img src="./img/help.svg" alt="" class="sidebar__icon" />
+						<span>Support</span>
+					</a>
+				</div>
+				<div class="sidebar__navigation-account">
+					<a href="#" class="sidebar__navigation-link">
+						<img src="./img/settings.svg" alt="" class="sidebar__icon" />
+						<span>Account</span>
+					</a>
+					<a href="#" class="sidebar__navigation-logout">
+						<img src="./img/logout.svg" alt="" class="sidebar__icon" />
+						<span>Logout</span>
+					</a>
+				</div>
+			</div>
+			<!-- End of sidebar navigation-->
+		</div>
+		<!-- End of sidebar-->
+		<!-- 
+			*****
+				PLANNER
+				Imas tabove kojima stavljas klasu plannerTabs__tab-active kad korisnik klikne na neki tab.
+				prvi je uvek po defaultu active. 
+				I onda dodajes ili brises klasu sa forme hidePlannerForm u zavisnosti od toga sta hoces 
+				da prikazes a sta da sakrijes. 
+				Ovo sam odradio sa klasama ali ono ti mozes da odradis neku svoju logiku preko vue.
+			*****
+		-->
+		<div class="container">
+			<div class="content">
+				<div class="planner__container">
+					<div class="planner__heading">
+						<h2>Second week planner</h2>
+						<h3>Lorem ipsum dolor sit amet.</h3>
+					</div>
+					<div class="plannerTabs">
+						<a href="#" class="plannerTabs__tab plannerTabs__tab-active"
+							>Outcome</a
+						>
+						<a href="#" class="plannerTabs__tab">Why?</a>
+						<a href="#" class="plannerTabs__tab">How?</a>
+					</div>
+					<form action="#" class="day__form">
+						<h2 class="plannerForm__heading">
+							What is my purpose driven outcome?
+						</h2>
+						<h3 class="plannerForm__subheading">Lorem ipsum dolor sit amet.</h3>
+						<p class="formPlanner__text">
+							Ovamo se iz baze ispisuju sta je korisnik uneo za #1 purpose
+							driven role
+						</p>
+						<div class="form__group">
+							<textarea
+								name=""
+								class="form__textarea"
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+							></textarea>
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content"
+									>Outcome for Purpose Driven Role #1</span
+								>
+							</label>
+						</div>
+						<p class="formPlanner__text">
+							Ovamo se iz baze ispisuju sta je korisnik uneo za #2 purpose
+							driven role
+						</p>
+						<div class="form__group">
+							<textarea
+								name=""
+								class="form__textarea"
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+							></textarea>
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content"
+									>Outcome for Purpose Driven Role #2</span
+								>
+							</label>
+						</div>
+						<p class="formPlanner__text">
+							Ovamo se iz baze ispisuju sta je korisnik uneo za #3 purpose
+							driven role
+						</p>
+						<div class="form__group">
+							<textarea
+								name=""
+								class="form__textarea"
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+							></textarea>
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content"
+									>Outcome for Purpose Driven Role #3</span
+								>
+							</label>
+						</div>
+						<p class="formPlanner__text">
+							Ovamo se iz baze ispisuju sta je korisnik uneo za #4 purpose
+							driven role
+						</p>
+						<div class="form__group">
+							<textarea
+								name=""
+								class="form__textarea"
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+							></textarea>
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content"
+									>Outcome for Purpose Driven Role #4</span
+								>
+							</label>
+						</div>
+						<p class="formPlanner__text">
+							Ovamo se iz baze ispisuju sta je korisnik uneo za #5 purpose
+							driven role
+						</p>
+						<div class="form__group">
+							<textarea
+								name=""
+								class="form__textarea"
+								id=""
+								cols="30"
+								rows="15"
+								placeholder=" "
+							></textarea>
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content"
+									>Outcome for Purpose Driven Role #5</span
+								>
+							</label>
+						</div>
+						<input type="submit" value="Save" class="form__button" />
+					</form>
+
+					<!-- 
+						
+						ODAVDE KRECE FORMA ZA WHY 
+					
+					-->
+
+					<form action="#" class="day__form hidePlannerForm">
+						<h2 class="plannerForm__heading">What is my core "Why"</h2>
+						<h3 class="plannerForm__subheading">Lorem ipsum dolor sit amet.</h3>
+						<p class="formPlanner__text">
+							Ovamo se iz baze ispisuju sta je korisnik uneo za #1 purpose
+							driven role
+						</p>
+						<div class="form__group">
+							<textarea
+								name=""
+								class="form__textarea"
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+							></textarea>
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content"
+									>My Purpose Driven "Why" for Purpose Driven Role #1</span
+								>
+							</label>
+						</div>
+						<p class="formPlanner__text">
+							Ovamo se iz baze ispisuju sta je korisnik uneo za #2 purpose
+							driven role
+						</p>
+						<div class="form__group">
+							<textarea
+								name=""
+								class="form__textarea"
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+							></textarea>
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content"
+									>My Purpose Driven "Why" for Purpose Driven Role #2</span
+								>
+							</label>
+						</div>
+						<p class="formPlanner__text">
+							Ovamo se iz baze ispisuju sta je korisnik uneo za #3 purpose
+							driven role
+						</p>
+						<div class="form__group">
+							<textarea
+								name=""
+								class="form__textarea"
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+							></textarea>
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content"
+									>My Purpose Driven "Why" for Purpose Driven Role #3</span
+								>
+							</label>
+						</div>
+						<p class="formPlanner__text">
+							Ovamo se iz baze ispisuju sta je korisnik uneo za #4 purpose
+							driven role
+						</p>
+						<div class="form__group">
+							<textarea
+								name=""
+								class="form__textarea"
+								id=""
+								cols="30"
+								rows="10"
+								placeholder=" "
+							></textarea>
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content"
+									>My Purpose Driven "Why" for Purpose Driven Role #4</span
+								>
+							</label>
+						</div>
+						<p class="formPlanner__text">
+							Ovamo se iz baze ispisuju sta je korisnik uneo za #5 purpose
+							driven role
+						</p>
+						<div class="form__group">
+							<textarea
+								name=""
+								class="form__textarea"
+								id=""
+								cols="30"
+								rows="15"
+								placeholder=" "
+							></textarea>
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content"
+									>My Purpose Driven "Why" for Purpose Driven Role #5</span
+								>
+							</label>
+						</div>
+						<input type="submit" value="Save" class="form__button" />
+					</form>
+
+					<!-- 
+
+						FORMA ZA HOW
+
+					-->
+
+					<form action="#" class="day__form hidePlannerForm">
+						<h2 class="plannerForm__heading">Activities:</h2>
+						<h3 class="plannerForm__subheading">Lorem ipsum dolor sit amet.</h3>
+						<div class="form__group">
+							<textarea
+								name=""
+								class="form__textarea"
+								id=""
+								cols="30"
+								rows="15"
+								placeholder=" "
+							></textarea>
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content">Activity #1</span>
+							</label>
+						</div>
+						<div class="form__group">
+							<textarea
+								name=""
+								class="form__textarea"
+								id=""
+								cols="30"
+								rows="15"
+								placeholder=" "
+							></textarea>
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content">Activity #2</span>
+							</label>
+						</div>
+						<div class="form__group">
+							<textarea
+								name=""
+								class="form__textarea"
+								id=""
+								cols="30"
+								rows="15"
+								placeholder=" "
+							></textarea>
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content">Activity #3</span>
+							</label>
+						</div>
+						<div class="form__btnGroup">
+							<a href="#" class="form__addTextarea">add another activity</a>
+
+							<a href="#" class="form__removeTextarea">
+								remove last activity
+							</a>
+						</div>
+						<h2 class="plannerForm__heading">To do:</h2>
+						<h3 class="plannerForm__subheading">Lorem ipsum dolor sit amet.</h3>
+						<div class="form__group">
+							<input type="text" class="form__input" placeholder=" " />
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content">Add your to do</span>
+							</label>
+						</div>
+						<div class="form__group">
+							<input type="text" class="form__input" placeholder=" " />
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content">Add your to do</span>
+							</label>
+						</div>
+						<div class="form__group">
+							<input type="text" class="form__input" placeholder=" " />
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content">Add your to do</span>
+							</label>
+						</div>
+						<div class="form__btnGroup">
+							<a href="#" class="form__addTextarea">add another to do</a>
+
+							<a href="#" class="form__removeTextarea"> remove last to do </a>
+						</div>
+						<h2 class="plannerForm__heading">THE ONE THING</h2>
+						<h3 class="plannerForm__subheading">
+							Habit I'm implementing / destroying is:
+						</h3>
+						<div class="form__group">
+							<input type="text" class="form__input" placeholder=" " />
+							<label for="" class="form__label form__label-textarea">
+								<span class="form__label-content">Enter the habit here</span>
+							</label>
+						</div>
+						<input type="submit" value="Save" class="form__button" />
+					</form>
+				</div>
+			</div>
+			<!-- End of content -->
+		</div>
+		<!-- End of container -->
+	</body>
+</html>

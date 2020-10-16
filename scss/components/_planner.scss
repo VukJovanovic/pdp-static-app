@@ -1,0 +1,132 @@
+.planner__container {
+	padding: 10rem 0;
+
+	form {
+		margin-top: 0;
+	}
+}
+
+.planner__heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		font-family: $font-source-sans;
+		font-size: $font-size-big;
+		font-weight: $bold;
+		color: $color-neutral;
+		margin-bottom: 0.5rem;
+		position: relative;
+		padding-bottom: 0.5rem;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 10rem;
+			height: 1px;
+			background-color: $color-danger;
+		}
+	}
+	h3 {
+		font-family: $font-open-sans;
+		font-size: $font-size-4;
+		font-weight: $light;
+		color: $color-neutral;
+	}
+}
+.plannerTabs {
+	display: flex;
+	justify-content: center;
+	margin-top: 5rem;
+	&__tab {
+		font-family: $font-source-sans;
+		font-size: $font-size-4;
+		font-weight: $light;
+		margin-right: 2rem;
+		color: $color-neutral;
+		padding: 1.5rem;
+		border-radius: 10px 10px 0 0;
+		transition: 0.4s ease;
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			background-color: $color-primary;
+		}
+	}
+
+	&__tab-active {
+		background-color: $color-primary;
+	}
+}
+
+.plannerForm__heading {
+	text-align: center;
+	font-family: $font-source-sans;
+	font-size: $font-size-1;
+	color: $font-secondary;
+	font-weight: $light;
+	margin-bottom: 1rem;
+	position: relative;
+	padding-bottom: 0.5rem;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 1px;
+		width: 8rem;
+		background-color: $color-danger;
+	}
+
+	@media only screen and(min-width: 1024px) {
+		font-size: 2.2rem;
+	}
+}
+
+.plannerForm__subheading {
+	text-align: center;
+	font-family: $font-open-sans;
+	font-size: $font-size-2;
+	color: $font-secondary;
+	font-weight: $light;
+	margin-bottom: 4rem;
+}
+
+.plannerActivitiesForm {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+
+	@media only screen and(max-width: 550px) {
+		grid-template-columns: 1fr;
+	}
+	p {
+		font-family: $font-source-sans;
+		font-size: $font-size-4;
+		font-weight: $light;
+		color: $color-neutral;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+
+	.form__button {
+		grid-column: 1 / -1;
+	}
+
+	textarea {
+		height: 5rem;
+	}
+
+	.form__btnGroup {
+		grid-column: 1 / -1;
+	}
+}
+
+.hidePlannerForm {
+	display: none;
+}
