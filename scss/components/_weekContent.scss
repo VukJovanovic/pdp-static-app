@@ -43,7 +43,6 @@
 	padding: 0rem 1.5rem;
 	width: 100%;
 	overflow: hidden;
-	height: 0;
 	justify-content: center;
 }
 
@@ -59,8 +58,6 @@
 	margin: 1rem;
 	background-color: $color-primary;
 	position: relative;
-	transform: translateY(-50px);
-	opacity: 0;
 
 	@media only screen and(max-width: 430px) {
 		width: 13rem;

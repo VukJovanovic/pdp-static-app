@@ -91,4 +91,4 @@ const hideSidebar = () => {
 	});
 };
 
-export { showWeekDays, hideWeekDays, showSidebar, hideSidebar };
+export {showSidebar, hideSidebar };
