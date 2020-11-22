@@ -624,9 +624,6 @@ textarea::-webkit-scrollbar {
   font-size: 1.6rem;
   color: #f7ebec;
 }
-.form__group--activities .form__checkBoxContainer .form__checkBox input {
-  -webkit-appearance: none;
-}
 
 .form__group-row {
   display: -webkit-box;
