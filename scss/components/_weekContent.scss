@@ -44,6 +44,29 @@
 	width: 100%;
 	overflow: hidden;
 	justify-content: center;
+	opacity: 0;
+	height: 0;
+	transform: translateY(-15px);
+	transition: height opacity .3s;
+}
+
+.week__days--active{
+	animation-name: hideUntil;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hideUntil{
+	from{
+		opacity: 0;
+		height: 0;
+		transform: translateY(-15px);
+	}
+	to{
+		height: 100%;
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
 
 .week__day {
