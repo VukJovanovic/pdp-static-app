@@ -44,6 +44,49 @@
 	margin-bottom: 4rem;
 }
 
+.form__group--activities{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	.form__group{
+		width: 60%;
+		textarea{
+			height: 5rem;
+		}
+		@media only screen and(max-width: 1024px){
+			width: 100%;
+		}
+	}
+	@media only screen and(max-width: 1024px){
+		flex-direction: column;
+	}
+	.form__checkBoxContainer{
+		width: 40%;
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+		padding: 0 2rem;
+		@media only screen and(max-width: 1024px){
+			width: 100%;
+			margin-bottom: 4rem;
+			padding: 0;
+		}
+		.form__checkBox{
+			display: flex;
+			flex-direction: column;
+
+			label{
+				margin-bottom: 1rem;
+				font-family: $font-open-sans;
+				font-weight: $light;
+				font-size: $font-size-2;
+				color: $font-secondary;
+			}
+		}
+	}
+	
+}
+
 // form group where content goes in a row label first then input next to it
 .form__group-row {
 	display: flex;
