@@ -54,25 +54,21 @@
 
 // ************* Day Video styles
 .day__video {
-	margin: 5rem 0;
-	height: 30rem;
-	background-color: $color-primary;
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+	width: 80%;
+	margin: 3rem auto;
 
-	@media only screen and(min-width: 550px) {
-		width: 90%;
-		margin: 5rem auto;
+	@media only screen and(max-width: 600px){
+		width: 100%;
 	}
-	@media only screen and(min-width: 950px) {
-		width: 80%;
-		margin: 7rem auto;
-	}
-	@media only screen and(min-width: 1200px) {
-		width: 70%;
-		height: 35rem;
-	}
-	@media only screen and(min-width: 1350px) {
-		width: 70%;
-		height: 40rem;
+	iframe{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
 }
 

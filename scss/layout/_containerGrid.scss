@@ -15,8 +15,8 @@
 		position: relative;
 		grid-column: 1 / -1;
 		display: grid;
-		grid-template-columns: minmax(30px, 1fr) minmax(min-content, 1000px) minmax(
-				30px,
+		grid-template-columns: minmax(10px, 1fr) minmax(min-content, 1000px) minmax(
+				10px,
 				1fr
 			);
 
