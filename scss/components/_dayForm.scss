@@ -460,3 +460,48 @@
 	border-radius: 10px;
 	margin-bottom: 3rem;
 }
+
+.text-center{
+	text-align: center;
+}
+
+// Combo box select 
+.select__container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	.select__input{
+		width: 30rem;
+		position: relative;
+		border-radius: 10px;
+		margin-right: 2rem;
+		margin-bottom: 2rem;
+		&::after{
+			content: "\25bc";
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 4rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 2.5rem;
+			border-radius: 2px 10px 10px 2px;
+			background-color: $color-danger;
+			color: $font-secondary;
+			pointer-events: none;
+			user-select: none;
+		}
+		select{
+			width: 100%;
+			padding: 1rem;
+			background-color: $color-secondary;
+			border: none;
+			color: $font-secondary;
+			font-family: $font-open-sans;
+			position: relative;
+			border-radius: inherit;
+		}
+	}
+}
