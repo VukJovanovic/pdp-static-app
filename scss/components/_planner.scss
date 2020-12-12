@@ -4,6 +4,14 @@
 	form {
 		margin-top: 0;
 	}
+
+	@media only screen and(max-width: 410px){
+		.plannerWhy{
+			.form__textarea{
+				padding-top: 2.5rem;
+			}
+		}
+	}
 }
 
 .planner__heading {
@@ -35,6 +43,8 @@
 		font-size: $font-size-4;
 		font-weight: $light;
 		color: $color-neutral;
+		max-width: 50rem;
+		text-align: center;
 	}
 }
 .plannerTabs {
@@ -141,3 +151,4 @@
 .hidePlannerForm {
 	display: none;
 }
+
