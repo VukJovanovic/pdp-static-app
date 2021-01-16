@@ -184,7 +184,6 @@
 	background-color: $color-primary;
 	width: 100%;
 	min-height: 4rem;
-	height: 8rem;
 }
 
 .form__textarea::after {
@@ -387,14 +386,7 @@
 	display: block;
 	width: max-content;
 	margin: 0 auto;
-	transition: all 0.3s ease;
 	margin-bottom: 4rem;
-	&:focus {
-		padding: 0 3rem 0.5rem 3rem;
-	}
-	&:hover {
-		transform: translateY(-5px);
-	}
 }
 .form__addTextarea {
 	border-bottom: 1px solid $color-danger;
